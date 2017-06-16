@@ -12,6 +12,11 @@ import { Info3Page } from '../pages/info3/info3';
 import { WelcomePage } from '../pages/welcome/welcome';
 import { SeguridadPage } from '../pages/seguridad/seguridad';
 import { SexoPage } from '../pages/sexo/sexo';
+import { PaisPage } from '../pages/pais/pais';
+import { LlegadaChilePage } from '../pages/llegada-chile/llegada-chile';
+import { RegistroPage } from '../pages/registro/registro';
+import { PerfilExitosoPage } from '../pages/perfil-exitoso/perfil-exitoso';
+import { LineaPasosPage } from '../pages/linea-pasos/linea-pasos';
 import { ThemePage } from '../pages/theme/theme';
 import { ProfilePage } from '../pages/profile/profile';
 import { VideoPage } from '../pages/video/video';
@@ -28,6 +33,11 @@ import { VideoPage } from '../pages/video/video';
     WelcomePage,
     SeguridadPage,
     SexoPage,
+    PaisPage,
+    LlegadaChilePage,
+    RegistroPage,
+    PerfilExitosoPage,
+    LineaPasosPage,
     ThemePage,
     ProfilePage,
     VideoPage
@@ -46,6 +56,11 @@ import { VideoPage } from '../pages/video/video';
     WelcomePage,
     SeguridadPage,
     SexoPage,
+    PaisPage,
+    LlegadaChilePage,
+    RegistroPage,
+    PerfilExitosoPage,
+    LineaPasosPage,
     ThemePage,
     ProfilePage,
     VideoPage

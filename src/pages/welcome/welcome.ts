@@ -16,6 +16,7 @@ import { SeguridadPage } from '../seguridad/seguridad';
 export class WelcomePage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+
   }
 
   ionViewDidLoad() {

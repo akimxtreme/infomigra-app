@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { LineaPasosPage } from '../linea-pasos/linea-pasos';
 /**
  * Generated class for the PerfilExitosoPage page.
  *
@@ -19,6 +19,12 @@ export class PerfilExitosoPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PerfilExitosoPage');
+  }
+
+  navigate(miurl){
+  	if(miurl == 'LineaPasosPage') {
+  		this.navCtrl.push(LineaPasosPage);
+  	}
   }
 
 }

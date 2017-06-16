@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-
+import { HomePage } from '../home/home';
 /**
  * Generated class for the LineaPasosPage page.
  *
@@ -19,6 +19,12 @@ export class LineaPasosPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LineaPasosPage');
+  }
+
+  navigate(miurl){
+  	if(miurl == 'HomePage') {
+  		this.navCtrl.push(HomePage);
+  	}
   }
 
 }

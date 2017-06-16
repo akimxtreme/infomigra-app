@@ -2,12 +2,24 @@
 	background-color: #FFF;margin-top: 0%;
 }
 
+.arrow {
+	text-align: center;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.arrow ion-icon {
+	font-size: 60px;
+	color: #FFF;
+	margin-top: -30px;
+}
+
 .page-seguridad .scroll-content > p  {
 	text-align: center;
 }
 
 .page-seguridad .scroll-content > p > img {
-	width: 80%; margin: 20% auto 30px auto; opacity: 1;padding: 16px 16px 0px 16px;
+	width: 80%; margin: 10% auto 30px auto; opacity: 1;padding: 16px 16px 0px 16px;
 }
 
 .page-seguridad .contenido {

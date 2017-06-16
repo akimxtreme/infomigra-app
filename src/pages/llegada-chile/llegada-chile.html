@@ -1,18 +1,38 @@
-<!--
-  Generated template for the LlegadaChilePage page.
-
-  See http://ionicframework.com/docs/components/#navigation for more info on
-  Ionic pages and navigation.
--->
 <ion-header>
 
   <ion-navbar>
-    <ion-title>llegadaChile</ion-title>
+    <ion-title>CREANDO TU PERFIL</ion-title>
   </ion-navbar>
 
 </ion-header>
+<ion-content class="page-pais">
+<p style="text-align: center;color: #666; font-size: 16px;">¿Cómo llegaste a Chile?</p>
+<p><img src="assets/nacionalidad/{{ img_pais }}"></p>
+<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:25%;">
+	<ion-row>
 
+		
 
-<ion-content padding>
+  		<ion-col col-4>
+			<ion-row class="pais" (click)="llegada('irregular')">
+				<p><img src="assets/irregular.png" alt=""></p>
+				<p>Irregular</p>				
+			</ion-row>
+		</ion-col>
+		<ion-col col-4>
+			<ion-row class="pais" (click)="llegada('turista')">
+				<p><img src="assets/turista.png" alt=""></p>				
+				<p>Turista</p>
+			</ion-row>
+		</ion-col>
 
+		<ion-col col-4>
+			<ion-row class="pais" (click)="llegada('trabajador')">
+				<p><img src="assets/trabajador.png" alt=""></p>				
+				<p>Trabajador</p>
+			</ion-row>
+		</ion-col>
+
+	</ion-row>
+</ion-grid>
 </ion-content>

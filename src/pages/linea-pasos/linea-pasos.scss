@@ -1,3 +1,65 @@
-page-linea-pasos {
+.page-linea-pasos {
 
+}
+
+.page-linea-pasos {
+
+}
+
+ion-header ion-navbar .toolbar-background-md {	
+	background: #312051;
+}
+
+.toolbar-content .title-md .toolbar-title {
+	color: #FFF !important;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.footer .toolbar-content .title-md .toolbar-title {
+	color: #000 !important;
+}
+
+.bar-button-default-md {
+	color: #FFF;
+}
+
+
+.arrow {
+	text-align: center;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.arrow ion-icon {
+	font-size: 60px;
+	color: #FFF;
+	margin-top: -30px;
+}
+
+.page-linea-pasos .scroll-content {
+	margin-top: 40px !important;
+}
+.page-linea-pasos .scroll-content > div > p  {
+	text-align: center;
+}
+
+.page-linea-pasos .scroll-content > div > p > img {
+	width: 100px; margin: 5% auto auto auto; border-radius: 50px;border: 10px solid #312051;
+}
+
+.page-linea-pasos .pais > p {
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin: 1px;
+	color: #312051;
+}
+
+.page-linea-pasos .pais p img {
+	width: 40px;
+	margin: 0px;
+	border-radius: 20px;
+	border: 2px solid #312051;
 }

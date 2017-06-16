@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LlegadaChilePage } from '../llegada-chile/llegada-chile';
 
 /**
  * Generated class for the PaisPage page.
@@ -13,12 +14,24 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
   templateUrl: 'pais.html',
 })
 export class PaisPage {
+  public imagen;
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+  	this.imagen = navParams.get('imagen');
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad PaisPage');
+  }
+
+  pais(valor){ 	
+
+  	this.navCtrl.push(LlegadaChilePage,{
+  			pais: valor,
+  			img_pais: valor.toLowerCase() + "-a-" + this.navParams.get('genero').toLowerCase() + ".png"
+        // venezuela-a-m.jpg
+
+  		});
   }
 
 }

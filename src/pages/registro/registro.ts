@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PerfilExitosoPage } from '../perfil-exitoso/perfil-exitoso';
 
 /**
  * Generated class for the RegistroPage page.
@@ -19,6 +20,12 @@ export class RegistroPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistroPage');
+  }
+
+  navigate(miurl){
+  	if(miurl == 'PerfilExitosoPage') {
+  		this.navCtrl.push(PerfilExitosoPage);
+  	}
   }
 
 }

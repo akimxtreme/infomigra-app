@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { PaisPage } from '../pais/pais';
 
 /**
  * Generated class for the SexoPage page.
@@ -21,4 +22,21 @@ export class SexoPage {
     console.log('ionViewDidLoad SexoPage');
   }
 
+
+
+  genero(valor){
+  	var url = "";
+  	if(valor == 'F') {
+  		url = "femenino.png"
+  	}else{
+  		url = "masculino.png"
+  	}
+
+  	this.navCtrl.push(PaisPage,{
+  			imagen: url,
+  			genero: valor
+
+  		});
+
+  }
 }

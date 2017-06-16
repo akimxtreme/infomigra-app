@@ -1,3 +1,28 @@
-page-registro {
+.page-registro {
 
+}
+
+.arrow {
+	text-align: center;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.arrow ion-icon {
+	font-size: 60px;
+	color: #FFF;
+	margin-top: -30px;
+}
+
+.page-registro .scroll-content > p  {
+	text-align: center;
+}
+
+
+.page-registro .scroll-content > p > img {
+	width: 60%; margin: 10% auto auto auto; opacity: 1;padding: 16px 16px 0px 16px;
+}
+
+.form_registro ion-item ion-input {
+	font-size: 14px !important;
 }

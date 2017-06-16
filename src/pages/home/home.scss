@@ -1,13 +1,40 @@
 .page-home {
 	background-color: #7e6ea7;
 }
+.page-home p {
+	text-align: center;
+}
+
+.page-home ion-grid {
+	margin-top: 30%;
+}
+
+.idioma {
+	color:#FFF;
+	padding-top: 5px;
+	font-weight: 500;
+	
+}
+
+.es button {
+	text-align: right;
+	min-width: 75% !important;
+	float: right;
+}
+
+.cr button {
+	text-align: left;
+	min-width: 75% !important;
+}
 
 .mitoggle div .item-md.item-block .item-inner {
 	padding-right: 0px;
 	border-bottom: none;
 }
 
-
+.mitoggle div ion-item {
+	background-color: transparent;padding-left: 0px;
+}
 .mitoggle div .item-md.item-block .item-inner .input-wrapper {
 	float: left;
 	position: absolute;
@@ -21,6 +48,9 @@
 .image_home {
 	opacity: 1 !important;
 	transition: opacity 4s;
+	width: 80% !important;
+	margin: 42% auto auto auto !important; 
+	opacity: 0.8;
 }
 
 .bg_button button {
