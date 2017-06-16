@@ -1,0 +1,23 @@
+<ion-content padding class="page-home">
+<p style="text-align: center;" (click)="navigate('InfoPage')"><img class="image_home" src="assets/home.png" style="width: 80%; margin: 42% auto auto auto; opacity: 0.8;"></p>
+
+<ion-grid  style="margin-top: 35%;">
+    <ion-row>
+      <ion-col>
+        <div class='{{ clase_es }}' style="text-align: right;color:#FFF;padding-top: 5px;font-weight: 500;"><button ion-button color="light" outline small (click)="navigate('InfoPage')" [disabled]="disabled_es">Español</button></div>
+      </ion-col>
+      <ion-col col-3 style="" class="mitoggle">
+        <div><ion-item style="background-color: transparent;padding-left: 0px;">    
+	<!-- <ion-toggle value="royal" checked="true" (click)="language($event)" id="holas"></ion-toggle>-->
+  <ion-toggle value="royal" checked="false" (click)="doCheck($event)" [checked]="isChecked" ></ion-toggle>
+</ion-item></div>
+      </ion-col>
+      <ion-col>
+        <div class='{{ clase_cr }}' style="text-align: left;color:#FFF;padding-top: 5px;font-weight: 500;"><button ion-button color="light" outline small (click)="navigate('InfoPage')" [disabled]="disabled_cr">Creol</button></div>
+      </ion-col>
+</ion-row>
+</ion-grid>
+</ion-content>
+
+
+
