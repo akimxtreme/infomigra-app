@@ -1,3 +1,7 @@
+.page-region {
+
+}
+
 .page-pais {
 
 }
@@ -30,15 +34,15 @@ ion-header ion-navbar .toolbar-background-md {
 	margin-top: -30px;
 }
 
-.page-pais .scroll-content > p  {
+.page-region .scroll-content > p  {
 	text-align: center;
 }
 
-.page-pais .scroll-content > p > img {
+.page-region .scroll-content > p > img {
 	width: 80%; margin: 0% auto auto auto; opacity: 1;padding: 16px 16px 0px 16px;
 }
 
-.page-pais .pais > p {
+.page-region .estado > p {
 	text-align: center;
 	float: left;
 	width: 100%;
@@ -46,14 +50,14 @@ ion-header ion-navbar .toolbar-background-md {
 	color: #312051;
 }
 
-.page-pais .pais p img {
+.page-region .estado p img {
 	width: 50px;
 	margin: 0px;
 	border-radius: 25px;
 	border: 2px solid #312051;
 }
 
-.page-pais .flecha {
+.page-region .flecha {
 	font-size: 28px;
 	margin-top: 0%;
 	padding-top: 18px;

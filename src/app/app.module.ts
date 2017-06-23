@@ -13,7 +13,13 @@ import { WelcomePage } from '../pages/welcome/welcome';
 import { SeguridadPage } from '../pages/seguridad/seguridad';
 import { SexoPage } from '../pages/sexo/sexo';
 import { PaisPage } from '../pages/pais/pais';
+import { AllPaisesPage } from '../pages/all-paises/all-paises';
 import { LlegadaChilePage } from '../pages/llegada-chile/llegada-chile';
+import { AllStatusLlegadaPaisPage } from '../pages/all-status-llegada-pais/all-status-llegada-pais';
+import { TiempoLlegadaChilePage } from '../pages/tiempo-llegada-chile/tiempo-llegada-chile';
+import { SituacionActualPage } from '../pages/situacion-actual/situacion-actual';
+import { TiempoSituacionActualPage } from '../pages/tiempo-situacion-actual/tiempo-situacion-actual';
+import { RegionPage } from '../pages/region/region';
 import { RegistroPage } from '../pages/registro/registro';
 import { PerfilExitosoPage } from '../pages/perfil-exitoso/perfil-exitoso';
 import { LineaPasosPage } from '../pages/linea-pasos/linea-pasos';
@@ -34,7 +40,13 @@ import { VideoPage } from '../pages/video/video';
     SeguridadPage,
     SexoPage,
     PaisPage,
+    AllPaisesPage,
     LlegadaChilePage,
+    AllStatusLlegadaPaisPage,
+    TiempoLlegadaChilePage,
+    SituacionActualPage,
+    TiempoSituacionActualPage,
+    RegionPage,
     RegistroPage,
     PerfilExitosoPage,
     LineaPasosPage,
@@ -57,7 +69,13 @@ import { VideoPage } from '../pages/video/video';
     SeguridadPage,
     SexoPage,
     PaisPage,
+    AllPaisesPage,
     LlegadaChilePage,
+    AllStatusLlegadaPaisPage,
+    TiempoLlegadaChilePage,
+    SituacionActualPage,
+    TiempoSituacionActualPage,
+    RegionPage,
     RegistroPage,
     PerfilExitosoPage,
     LineaPasosPage,

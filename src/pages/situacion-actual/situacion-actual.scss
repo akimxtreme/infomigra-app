@@ -1,3 +1,63 @@
-page-situacion-actual {
+.page-situacion-actual {
+	background-color: #7e6ea7;
+}
 
+ion-header ion-navbar .toolbar-background-md {	
+	background: #312051;
+}
+
+.toolbar-content .title-md .toolbar-title {
+	color: #FFF !important;
+	text-align: center;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.bar-button-default-md {
+	color: #FFF;
+}
+
+
+.arrow {
+	text-align: center;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.arrow ion-icon {
+	font-size: 60px;
+	color: #FFF;
+	margin-top: -30px;
+}
+
+.page-situacion-actual .scroll-content > p  {
+	text-align: center;
+}
+
+.page-situacion-actual .scroll-content > p > img {
+	width: 80%; margin: 0% auto auto auto; opacity: 1;padding: 16px 16px 0px 16px;
+}
+
+.page-situacion-actual .estado > p {
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin: 1px;
+	color: #312051;
+}
+
+.page-situacion-actual .estado p img {
+	width: 50px;
+	margin: 0px;
+	border-radius: 25px;
+	border: 2px solid #312051;
+}
+
+.page-situacion-actual .flecha {
+	font-size: 28px;
+	margin-top: 0%;
+	padding-top: 18px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
 }

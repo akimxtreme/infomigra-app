@@ -1,65 +1,118 @@
-.page-linea-pasos {
-
+.page-linea-pasos-header ion-navbar .toolbar-background-md {
+	background: #7e6ea7 !important;
 }
 
-.page-linea-pasos {
-
+.page-linea-pasos-header ion-navbar .toolbar-background-md .back-button {
+	display:none;
 }
 
-ion-header ion-navbar .toolbar-background-md {	
-	background: #312051;
-}
-
-.toolbar-content .title-md .toolbar-title {
-	color: #FFF !important;
-	text-align: center;
+.page-linea-pasos-header ion-navbar ion-row ion-col ion-buttons button .button-inner > span {
 	font-weight: normal;
-	font-size: 16px;
+	font-size: 14px;
+	text-transform: capitalize;
 }
-
-.footer .toolbar-content .title-md .toolbar-title {
-	color: #000 !important;
-}
-
-.bar-button-default-md {
-	color: #FFF;
+.page-linea-pasos-header ion-navbar ion-row .title {
+	bottom: 0; 
+	margin-top: 3px; 
+	text-transform: uppercase;
 }
 
 
-.arrow {
-	text-align: center;
-	padding: 0px !important;
-	margin: 0px !important;
-}
-
-.arrow ion-icon {
-	font-size: 60px;
-	color: #FFF;
-	margin-top: -30px;
-}
-
-.page-linea-pasos .scroll-content {
-	margin-top: 40px !important;
-}
-.page-linea-pasos .scroll-content > div > p  {
-	text-align: center;
-}
-
-.page-linea-pasos .scroll-content > div > p > img {
-	width: 100px; margin: 5% auto auto auto; border-radius: 50px;border: 10px solid #312051;
-}
-
-.page-linea-pasos .pais > p {
-	text-align: center;
-	float: left;
+.page-linea-pasos div {
+	margin-top: 0px;
 	width: 100%;
-	margin: 1px;
-	color: #312051;
+	position: fixed;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	z-index:1;
 }
 
-.page-linea-pasos .pais p img {
-	width: 40px;
-	margin: 0px;
-	border-radius: 20px;
-	border: 2px solid #312051;
+.page-linea-pasos div .user, .page-linea-pasos div .username, .page-linea-pasos div .info {
+	text-align: center;
+}
+
+.page-linea-pasos div .user {
+	margin-bottom: 5px;
+}
+
+.page-linea-pasos div .user img {
+	width: 100px;
+	border: 10px solid #312051;
+	border-radius: 50px;
+}
+
+.page-linea-pasos div .username {
+	margin: 0;
+	font-weight: bold;
+	font-size: 16px;
+	color: #FFF;
+}
+
+.page-linea-pasos div .info {
+	margin: 0;
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-size: 14px;
+	color: #FFF;
+}
+
+.page-linea-pasos .pasos {
+	padding: 0;
+	margin: 0;
+	margin-top: 150px !important;
+	width: 100%;
+}
+
+.page-linea-pasos .pasos ion-row > ion-col.borde {
+	border-left: 3px solid #CCC;
+	margin-left: 50px;
+	padding:0;
+}
+
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.primero .col p img {
+	box-shadow: 0px 2px 2px #333;
+	border-radius: 25px;
+	margin-bottom:0px;
+}
+
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.primero {
+	position:fixed;
+	width:100%;
+	z-index: 2;
+}
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.margen {
+	margin-bottom: 70px !important;
+}
+
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row {
+	margin-left: -26px;
+	margin-bottom: 15px;
+}
+
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col {
+	padding: 0;
+}
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p {
+	margin: 0;
+	padding:0;
+}
+
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .texto {
+	margin-left: -30px;
+	margin-top: 5px;
+
+}
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p.title-paso, .page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p.desc-paso {
+	text-align: left;
+}
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p.title-paso {
+	font-weight:bold;
+	color: #333;
+}
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p.desc-paso {
+	color:#666;
+}
+.page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p img {
+	width: 50px;
+
 }

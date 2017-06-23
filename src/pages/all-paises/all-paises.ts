@@ -1,28 +1,26 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LlegadaChilePage } from '../llegada-chile/llegada-chile';
-import { AllPaisesPage } from '../all-paises/all-paises';
 
 /**
- * Generated class for the PaisPage page.
+ * Generated class for the AllPaisesPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
 @IonicPage()
 @Component({
-  selector: 'page-pais',
-  templateUrl: 'pais.html',
+  selector: 'page-all-paises',
+  templateUrl: 'all-paises.html',
 })
-export class PaisPage {
-  public imagen;
-
+export class AllPaisesPage {
+  public range;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	this.imagen = navParams.get('imagen');
+  	this.range = 10;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad PaisPage');
+    console.log('ionViewDidLoad AllPaisesPage');
   }
 
   pais(valor){ 	
@@ -34,14 +32,6 @@ export class PaisPage {
         // venezuela-a-m.jpg
 
   		});
-      
-      
-  }
-  allPaises(){
-    this.navCtrl.push(AllPaisesPage,{
-        genero: this.navParams.get('genero')
-      });
-
   }
 
 }

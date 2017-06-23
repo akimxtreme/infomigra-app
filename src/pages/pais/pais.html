@@ -8,31 +8,42 @@
 <ion-content class="page-pais">
 <p style="text-align: center;color: #666; font-size: 16px;">¿De qué país eres?</p>
 <p><img src="assets/{{ imagen }}"></p>
-<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:25%;">
-	<ion-row>
-
-		
-
-  		<ion-col col-4>
-			<ion-row class="pais" (click)="pais('bolivia')">
-				<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-				<p>Bolivia</p>				
-			</ion-row>
-		</ion-col>
-		<ion-col col-4>
-			<ion-row class="pais" (click)="pais('colombia')">
-				<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-				<p>Colombia</p>
-			</ion-row>
-		</ion-col>
-
-		<ion-col col-4>
-			<ion-row class="pais" (click)="pais('peru')">
-				<p><img src="assets/flags/peru.jpg" alt=""></p>				
-				<p>Perú</p>
-			</ion-row>
-		</ion-col>
-
-	</ion-row>
-</ion-grid>
 </ion-content>
+<ion-footer class="page-pais">
+	<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:0%;">
+		<ion-row>
+			<ion-col col-1>
+				<ion-row>
+					  <ion-icon name="arrow-round-back" class="flecha" (click)="allPaises()"></ion-icon>
+				</ion-row>
+			</ion-col>
+			<ion-col col-10>
+				<ion-row>
+			  		<ion-col col-4>
+						<ion-row class="pais" (click)="pais('bolivia')">
+							<p><img src="assets/flags/bolivia.jpg" alt=""></p>
+							<p>Bolivia</p>				
+						</ion-row>
+					</ion-col>
+					<ion-col col-4>
+						<ion-row class="pais" (click)="pais('colombia')">
+							<p><img src="assets/flags/colombia.jpg" alt=""></p>				
+							<p>Colombia</p>
+						</ion-row>
+					</ion-col>
+					<ion-col col-4>
+						<ion-row class="pais" (click)="pais('peru')">
+							<p><img src="assets/flags/peru.jpg" alt=""></p>				
+							<p>Perú</p>
+						</ion-row>
+					</ion-col>
+				</ion-row>
+			</ion-col>
+			<ion-col col-1 style="padding-left: 0;">
+				<ion-row>
+					  <ion-icon name="arrow-round-forward" class="flecha" (click)="allPaises()"></ion-icon>
+				</ion-row>
+			</ion-col>
+		</ion-row>
+	</ion-grid>
+</ion-footer>

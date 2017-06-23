@@ -5,34 +5,45 @@
   </ion-navbar>
 
 </ion-header>
-<ion-content class="page-pais">
+<ion-content class="page-llegada-chile">
 <p style="text-align: center;color: #666; font-size: 16px;">¿Cómo llegaste a Chile?</p>
 <p><img src="assets/nacionalidad/{{ img_pais }}"></p>
-<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:25%;">
+</ion-content>
+<ion-footer class="page-llegada-chile">
+<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:0%;">
 	<ion-row>
-
-		
-
-  		<ion-col col-4>
-			<ion-row class="pais" (click)="llegada('irregular')">
-				<p><img src="assets/irregular.png" alt=""></p>
-				<p>Irregular</p>				
+		<ion-col col-1>
+			<ion-row>
+			  <ion-icon name="arrow-round-back" class="flecha" (click)="allEstados()"></ion-icon>
 			</ion-row>
 		</ion-col>
-		<ion-col col-4>
-			<ion-row class="pais" (click)="llegada('turista')">
-				<p><img src="assets/turista.png" alt=""></p>				
-				<p>Turista</p>
+		<ion-col col-10>
+			<ion-row>
+				<ion-col col-4>
+					<ion-row class="estado" (click)="llegada('irregular')">
+						<p><img src="assets/irregular.png" alt=""></p>
+						<p>Irregular</p>				
+					</ion-row>
+				</ion-col>
+				<ion-col col-4>
+					<ion-row class="estado" (click)="llegada('turista')">
+						<p><img src="assets/turista.png" alt=""></p>				
+						<p>Turista</p>
+					</ion-row>
+				</ion-col>
+				<ion-col col-4>
+					<ion-row class="estado" (click)="llegada('trabajador')">
+						<p><img src="assets/trabajador.png" alt=""></p>				
+						<p>Trabajador</p>
+					</ion-row>
+				</ion-col>
 			</ion-row>
 		</ion-col>
-
-		<ion-col col-4>
-			<ion-row class="pais" (click)="llegada('trabajador')">
-				<p><img src="assets/trabajador.png" alt=""></p>				
-				<p>Trabajador</p>
+		<ion-col col-1 style="padding-left: 0;">
+			<ion-row>
+				<ion-icon name="arrow-round-forward" class="flecha" (click)="allEstados()"></ion-icon>
 			</ion-row>
 		</ion-col>
-
 	</ion-row>
 </ion-grid>
-</ion-content>
+</ion-footer>

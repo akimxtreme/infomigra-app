@@ -1,5 +1,5 @@
 <!--
-  Generated template for the TiempoSituacionActualPage page.
+  Generated template for the TiempoLlegadaChilePage page.
 
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
@@ -7,12 +7,38 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>tiempoSituacionActual</ion-title>
+    <ion-title>CREANDO TU PERFIL</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+
+<div class="circle">
+	<img class="left" src="assets/resta.png" alt="" (click)="resta('anio')">
+	<img class="right" src="assets/suma.png" alt="" (click)="suma('anio')">
+	<div class="progress-circle {{ percent_anio }}">
+   		<span>{{ anio }}<i>años</i></span>
+   		<div class="left-half-clipper">
+      		<div class="first50-bar"></div>
+      		<div class="value-bar"></div>
+   		</div>
+	</div>	
+</div>
+
+<div class="circle">
+	<img class="left" src="assets/resta.png" alt="" (click)="resta('mes')">
+	<img class="right" src="assets/suma.png" alt="" (click)="suma('mes')">
+	<div class="progress-circle {{ percent_mes }}">
+   		<span>{{ mes }}<i>meses</i></span>
+   		<div class="left-half-clipper">
+      		<div class="first50-bar"></div>
+      		<div class="value-bar"></div>
+   		</div>
+	</div>	
+</div>
+
+<p class="next"><img src="assets/next.png" alt="" (click)="next()"></p>
 
 </ion-content>
