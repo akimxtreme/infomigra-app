@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { TiempoSituacionActualPage } from '../tiempo-situacion-actual/tiempo-situacion-actual';
-
+import { AllSituacionActualPage } from '../all-situacion-actual/all-situacion-actual';
 /**
  * Generated class for the SituacionActualPage page.
  *
@@ -31,5 +31,10 @@ export class SituacionActualPage {
 
   llegada(valor){
   	this.navCtrl.push(TiempoSituacionActualPage);      
+  }
+
+  allEstados(){
+    this.navCtrl.push(AllSituacionActualPage);
+
   }
 }

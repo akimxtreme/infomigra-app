@@ -2,17 +2,17 @@
 
 }
 
-.page-pais {
 
-}
+.header-page-region {}
 
-ion-header ion-navbar .toolbar-background-md {	
+.header-page-region ion-navbar .toolbar-background-md {	
 	background: #312051;
 }
 
-.toolbar-content .title-md .toolbar-title {
+.header-page-region .toolbar-content .title-md .toolbar-title {
 	color: #FFF !important;
-	text-align: center;
+	text-align: left;
+  	margin-left: 35px;
 	font-weight: normal;
 	font-size: 16px;
 }

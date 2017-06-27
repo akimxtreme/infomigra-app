@@ -2,13 +2,14 @@
 
 }
 
-ion-header ion-navbar .toolbar-background-md {	
+.header-page-llegada-chile ion-navbar .toolbar-background-md {	
 	background: #312051;
 }
 
-.toolbar-content .title-md .toolbar-title {
+.header-page-llegada-chile .toolbar-content .title-md .toolbar-title {
 	color: #FFF !important;
-	text-align: center;
+	text-align: left;
+	margin-left: 35px;
 	font-weight: normal;
 	font-size: 16px;
 }
@@ -60,4 +61,17 @@ ion-header ion-navbar .toolbar-background-md {
 	padding-bottom: 15px;
 	padding-left: 5px;
 	padding-right: 5px;
+}
+
+.page-llegada-chile .flecha-izquierda img, .page-llegada-chile .flecha-derecha img {
+	width: 70%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.page-llegada-chile .flecha-derecha img {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	rotation: 180deg;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
 }

@@ -18,6 +18,7 @@ import { LlegadaChilePage } from '../pages/llegada-chile/llegada-chile';
 import { AllStatusLlegadaPaisPage } from '../pages/all-status-llegada-pais/all-status-llegada-pais';
 import { TiempoLlegadaChilePage } from '../pages/tiempo-llegada-chile/tiempo-llegada-chile';
 import { SituacionActualPage } from '../pages/situacion-actual/situacion-actual';
+import { AllSituacionActualPage } from '../pages/all-situacion-actual/all-situacion-actual';
 import { TiempoSituacionActualPage } from '../pages/tiempo-situacion-actual/tiempo-situacion-actual';
 import { RegionPage } from '../pages/region/region';
 import { RegistroPage } from '../pages/registro/registro';
@@ -45,6 +46,7 @@ import { VideoPage } from '../pages/video/video';
     AllStatusLlegadaPaisPage,
     TiempoLlegadaChilePage,
     SituacionActualPage,
+    AllSituacionActualPage,
     TiempoSituacionActualPage,
     RegionPage,
     RegistroPage,
@@ -74,6 +76,7 @@ import { VideoPage } from '../pages/video/video';
     AllStatusLlegadaPaisPage,
     TiempoLlegadaChilePage,
     SituacionActualPage,
+    AllSituacionActualPage,
     TiempoSituacionActualPage,
     RegionPage,
     RegistroPage,

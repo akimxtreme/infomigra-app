@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { WelcomePage } from '../welcome/welcome';
 
 /**
  * Generated class for the ThemePage page.
@@ -19,6 +20,12 @@ export class ThemePage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad ThemePage');
+  }
+
+  navigate(miurl){
+  	if(miurl == 'WelcomePage') {
+  		this.navCtrl.push(WelcomePage);
+  	}  	
   }
 
 }

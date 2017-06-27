@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="header-page-pais">
 
   <ion-navbar>
     <ion-title>CREANDO TU PERFIL</ion-title>
@@ -6,7 +6,7 @@
 
 </ion-header>
 <ion-content class="page-pais">
-<p style="text-align: center;color: #666; font-size: 16px;">¿De qué país eres?</p>
+<p style="text-align: center;color: #666; font-size: 17px;">¿De qué país eres?</p>
 <p><img src="assets/{{ imagen }}"></p>
 </ion-content>
 <ion-footer class="page-pais">
@@ -14,7 +14,7 @@
 		<ion-row>
 			<ion-col col-1>
 				<ion-row>
-					  <ion-icon name="arrow-round-back" class="flecha" (click)="allPaises()"></ion-icon>
+					<p class="flecha-izquierda"><img src="assets/flecha.png" alt="" (click)="allPaises()"></p>
 				</ion-row>
 			</ion-col>
 			<ion-col col-10>
@@ -39,9 +39,9 @@
 					</ion-col>
 				</ion-row>
 			</ion-col>
-			<ion-col col-1 style="padding-left: 0;">
+			<ion-col col-1>
 				<ion-row>
-					  <ion-icon name="arrow-round-forward" class="flecha" (click)="allPaises()"></ion-icon>
+					<p class="flecha-derecha"><img src="assets/flecha.png" alt="" (click)="allPaises()"></p>		
 				</ion-row>
 			</ion-col>
 		</ion-row>

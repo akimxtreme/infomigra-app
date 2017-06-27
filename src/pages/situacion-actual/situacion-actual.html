@@ -1,4 +1,4 @@
-<ion-header>
+<ion-header class="header-page-situacion-actual">
 
   <ion-navbar>
     <ion-title>CREANDO TU PERFIL</ion-title>
@@ -6,42 +6,42 @@
 
 </ion-header>
 <ion-content class="page-situacion-actual">
-<p style="text-align: center;color: #FFF; font-size: 16px;">¿Actualmente Eres?</p>
+<p style="text-align: center;color: #FFF; font-size: 17px;">¿Actualmente Eres?</p>
 <p><img src="assets/nacionalidad/{{ img_pais }}"></p>
 </ion-content>
-<ion-footer class="page-llegada-chile">
-<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:0%;">
+<ion-footer class="page-situacion-actual">
+<ion-grid class="contenido" style="border-top: 1px solid #FFF;border-bottom: 1px solid #FFF; margin-top:0%;">
 	<ion-row>
 		<ion-col col-1>
 			<ion-row>
-			  <ion-icon name="arrow-round-back" class="flecha" (click)="allEstados()"></ion-icon>
+			  <p class="flecha-izquierda"><img src="assets/flecha-blanca.png" alt="" (click)="allEstados()"></p>
 			</ion-row>
 		</ion-col>
 		<ion-col col-10>
 			<ion-row>
 				<ion-col col-4>
 					<ion-row class="estado" (click)="llegada('irregular')">
-						<p><img src="assets/irregular.png" alt=""></p>
-						<p>Irregular</p>				
+						<p><img src="assets/icon/otro.png" alt=""></p>
+						<p>Otro</p>				
 					</ion-row>
 				</ion-col>
 				<ion-col col-4>
 					<ion-row class="estado" (click)="llegada('turista')">
-						<p><img src="assets/turista.png" alt=""></p>				
+						<p><img src="assets/icon/turista-blanco.png" alt=""></p>				
 						<p>Turista</p>
 					</ion-row>
 				</ion-col>
 				<ion-col col-4>
 					<ion-row class="estado" (click)="llegada('trabajador')">
-						<p><img src="assets/trabajador.png" alt=""></p>				
+						<p><img src="assets/icon/contrato-general.png" alt=""></p>				
 						<p>Trabajador</p>
 					</ion-row>
 				</ion-col>
 			</ion-row>
 		</ion-col>
-		<ion-col col-1 style="padding-left: 0;">
+		<ion-col col-1>
 			<ion-row>
-				<ion-icon name="arrow-round-forward" class="flecha" (click)="allEstados()"></ion-icon>
+				<p class="flecha-derecha"><img src="assets/flecha-blanca.png" alt="" (click)="allEstados()"></p>
 			</ion-row>
 		</ion-col>
 	</ion-row>
