@@ -21,6 +21,7 @@ import { SituacionActualPage } from '../pages/situacion-actual/situacion-actual'
 import { AllSituacionActualPage } from '../pages/all-situacion-actual/all-situacion-actual';
 import { TiempoSituacionActualPage } from '../pages/tiempo-situacion-actual/tiempo-situacion-actual';
 import { RegionPage } from '../pages/region/region';
+import { ProgresoPage } from '../pages/progreso/progreso';
 import { RegistroPage } from '../pages/registro/registro';
 import { PerfilExitosoPage } from '../pages/perfil-exitoso/perfil-exitoso';
 import { LineaPasosPage } from '../pages/linea-pasos/linea-pasos';
@@ -49,6 +50,7 @@ import { VideoPage } from '../pages/video/video';
     AllSituacionActualPage,
     TiempoSituacionActualPage,
     RegionPage,
+    ProgresoPage,
     RegistroPage,
     PerfilExitosoPage,
     LineaPasosPage,
@@ -79,6 +81,7 @@ import { VideoPage } from '../pages/video/video';
     AllSituacionActualPage,
     TiempoSituacionActualPage,
     RegionPage,
+    ProgresoPage,
     RegistroPage,
     PerfilExitosoPage,
     LineaPasosPage,

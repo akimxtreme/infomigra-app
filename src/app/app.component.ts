@@ -3,7 +3,7 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-// import { VideoPage } from '../pages/video/video';
+import { VideoPage } from '../pages/video/video';
 // import { HomePage } from '../pages/home/home';
 // import { InfoPage } from '../pages/info/info';
 // import { Info2Page } from '../pages/info2/info2';
@@ -18,8 +18,9 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 // import { TiempoLlegadaChilePage } from '../pages/tiempo-llegada-chile/tiempo-llegada-chile';
 // import { SituacionActualPage } from '../pages/situacion-actual/situacion-actual';
 // import { AllSituacionActualPage } from '../pages/all-situacion-actual/all-situacion-actual';
- import { TiempoSituacionActualPage } from '../pages/tiempo-situacion-actual/tiempo-situacion-actual';
+// import { TiempoSituacionActualPage } from '../pages/tiempo-situacion-actual/tiempo-situacion-actual';
 // import { RegionPage } from '../pages/region/region';
+// import { ProgresoPage } from '../pages/progreso/progreso';
 // import { RegistroPage } from '../pages/registro/registro';
 // import { PerfilExitosoPage } from '../pages/perfil-exitoso/perfil-exitoso';
 // import { LineaPasosPage } from '../pages/linea-pasos/linea-pasos';
@@ -30,7 +31,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = VideoPage;
+  rootPage:any = VideoPage;
   // rootPage:any = HomePage;
   // rootPage:any = InfoPage;
   // rootPage:any = Info2Page;
@@ -45,8 +46,9 @@ export class MyApp {
   // rootPage:any = TiempoLlegadaChilePage;
   // rootPage:any = SituacionActualPage;
   // rootPage:any = AllSituacionActualPage;
-  rootPage:any = TiempoSituacionActualPage;
+  // rootPage:any = TiempoSituacionActualPage;
   // rootPage:any = RegionPage;
+  // rootPage:any = ProgresoPage;
   // rootPage:any = RegistroPage;
   // rootPage:any = PerfilExitosoPage;
   // rootPage:any = LineaPasosPage;

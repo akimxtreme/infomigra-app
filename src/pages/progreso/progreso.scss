@@ -1,3 +1,26 @@
-page-progreso {
+.page-progreso {
 
+}
+
+.wrapper {
+    
+    margin:auto;
+}
+.arc {
+    position:absolute;
+    top:0;
+    left:0;
+    width:100px;
+    height:100px;
+    border-radius:100%;
+    border:1px solid;
+    margin: auto;
+}
+.arc_start {
+    border-color:transparent red red red;
+    transform: rotate(45deg); /* Arc from 0 degrees */
+}
+.arc_end {
+    border-color:red red red transparent;
+    transform: rotate(75deg); /* to 30 degrees (clockwise) */
 }
