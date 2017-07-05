@@ -2,25 +2,582 @@
 
 }
 
-.wrapper {
-    
-    margin:auto;
+.header-page-progreso .toolbar-md .back-button {
+    display: none;
 }
-.arc {
-    position:absolute;
-    top:0;
-    left:0;
-    width:100px;
-    height:100px;
-    border-radius:100%;
-    border:1px solid;
-    margin: auto;
+.header-page-progreso .toolbar-md .toolbar-background-md {
+    background-color: #7e6ea7;
+    text-transform: uppercase;
+
 }
-.arc_start {
-    border-color:transparent red red red;
-    transform: rotate(45deg); /* Arc from 0 degrees */
+
+.header-page-progreso .toolbar-content .title-md .toolbar-title {
+  color: #FFF !important;
+  text-align: center;
+  margin-left: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  text-transform: uppercase;
 }
-.arc_end {
-    border-color:red red red transparent;
-    transform: rotate(75deg); /* to 30 degrees (clockwise) */
+
+.page-progreso .circle1 {
+    width: 24em;
+    height: 24em;
+    padding-top: 0;
+    margin: 25px auto;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 1px #000; */
+}
+
+.page-progreso .circle2 {
+    width: 21em;
+    height: 21em;
+    padding-top: 0;
+    margin: 25px auto;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 1px #000; */
+    margin-top: -92.5%;
+    margin-left: 9.5%;
+}
+
+.page-progreso .circle3 {
+    width: 18em;
+    height: 18em;
+    padding-top: 0;
+    margin: 25px auto;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 1px #000; */
+    margin-top: -80%;
+}
+
+.page-progreso .circle4 {
+    width: 15em;
+    height: 15em;
+    padding-top: 0;
+    margin: 25px auto;
+    border-radius: 50%;
+    /* box-shadow: 0px 0px 1px #000; */
+    margin-top: -69%;
+    margin-left: 21%;
+}
+
+.page-progreso .progress-circle1 {
+   font-size: 20px;
+   margin: 20px auto;
+   position: relative; /* so that children can be absolutely positioned */
+   padding: 0;
+   width: 17em;
+   height: 17em;
+   /* background-color: #CCC; */
+   border-radius: 50%;
+   line-height: 17em;
+}
+
+.page-progreso .progress-circle2 {
+   font-size: 20px;
+   margin: 20px auto;
+   position: relative; /* so that children can be absolutely positioned */
+   padding: 0;
+   width: 14em;
+   height: 14em;
+   /* background-color: #CCC; */
+   border-radius: 50%;
+   line-height: 14em;
+}
+
+.page-progreso .progress-circle3 {
+   font-size: 20px;
+   margin: 20px auto;
+   position: relative; /* so that children can be absolutely positioned */
+   padding: 0;
+   width: 11em;
+   height: 11em;
+   /* background-color: #CCC; */
+   border-radius: 50%;
+   line-height: 11em;
+}
+
+.page-progreso .progress-circle4 {
+   font-size: 20px;
+   margin: 20px auto;
+   position: relative; /* so that children can be absolutely positioned */
+   padding: 0;
+   width: 8em;
+   height: 8em;
+   /* background-color: #CCC; */
+   border-radius: 50%;
+   line-height: 8em;
+}
+
+
+.page-progreso .progress-circle1:after{
+    border: none;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 16.5em;
+    height: 16.5em;
+    background-color: white;
+    content: " ";
+    box-shadow: 0px 0px 3px #000;
+}
+
+.page-progreso .progress-circle2:after{
+    border: none;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 13.5em;
+    height: 13.5em;
+    background-color: white;
+    content: " ";
+    box-shadow: 0px 0px 3px #000;
+}
+
+.page-progreso .progress-circle3:after{
+    border: none;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 10.5em;
+    height: 10.5em;
+    background-color: white;
+    content: " ";
+    box-shadow: 0px 0px 3px #000;
+}
+
+.page-progreso .progress-circle4:after{
+    border: none;
+    position: absolute;
+    top: 0.25em;
+    left: 0.25em;
+    text-align: center;
+    display: block;
+    border-radius: 50%;
+    width: 7.5em;
+    height: 7.5em;
+    background-color: #312051;
+    content: " ";
+    /* box-shadow: 0px 0px 3px #000; */
+}
+/* Text inside the control */
+.page-progreso .progress-circle1 span {
+    position: absolute;
+    /*
+    line-height: 5em;
+    width: 5em;
+    */
+    text-align: center;
+    display: block;
+    color: #00919E;
+    z-index: 2;
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: -10px;
+}
+
+.page-progreso .progress-circle2 span {
+    position: absolute;
+    /*
+    line-height: 5em;
+    width: 5em;
+    */
+    text-align: center;
+    display: block;
+    color: #00919E;
+    z-index: 2;
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: -10px;
+}
+
+.page-progreso .progress-circle3 span {
+    position: absolute;
+    /*
+    line-height: 5em;
+    width: 5em;
+    */
+    text-align: center;
+    display: block;
+    color: #00919E;
+    z-index: 2;
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: -10px;
+}
+
+.page-progreso .progress-circle4 span {
+    position: absolute;
+    /*
+    line-height: 5em;
+    width: 5em;
+    */
+    text-align: center;
+    display: block;
+    color: #FFF;
+    z-index: 2;
+    width: 100%;
+    font-size: 1.5em;
+    margin-top: -10px;
+}
+
+.page-progreso .progress-circle4 span p.percent {
+    padding: 0;
+    margin: 0;
+    line-height: 2;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 1.6em;
+    margin-left: 15px;
+}
+
+.page-progreso .progress-circle4 span p.text {
+    padding: 0;
+    margin: 0;
+    line-height: 0;
+    font-size: 0.7em;
+
+}
+
+.page-progreso .progress-circle1 span i {
+    width: 100%;
+    float: left;
+    margin: -30px 0px 0px 0px;
+    padding: 0;
+    line-height: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #00919E;
+}
+
+.page-progreso .progress-circle2 span i {
+    width: 100%;
+    float: left;
+    margin: -30px 0px 0px 0px;
+    padding: 0;
+    line-height: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #00919E;
+}
+
+.page-progreso .progress-circle3 span i {
+    width: 100%;
+    float: left;
+    margin: -30px 0px 0px 0px;
+    padding: 0;
+    line-height: normal;
+    font-size: 13px;
+    text-transform: uppercase;
+    font-style: normal;
+    color: #00919E;
+}
+
+.page-progreso .progress-circle4 span i {
+
+    font-style: normal;
+    font-weight: bold;
+    font-size: 0.5em;
+    margin: 0px auto auto 5px;
+    vertical-align: super;
+
+}
+
+.page-progreso .left-half-clipper1 { 
+   /* a round circle */
+   border-radius: 50%;
+   width: 17em;
+   height: 17em;
+   position: absolute; /* needed for clipping */
+   clip: rect(0, 17em, 19em, 9em); /* clips the whole left half*/ 
+}
+
+.page-progreso .left-half-clipper2 { 
+   /* a round circle */
+   border-radius: 50%;
+   width: 14em;
+   height: 14em;
+   position: absolute; /* needed for clipping */
+   clip: rect(0, 14em, 16em, 6em); /* clips the whole left half*/ 
+}
+
+.page-progreso .left-half-clipper3 { 
+   /* a round circle */
+   border-radius: 50%;
+   width: 11em;
+   height: 11em;
+   position: absolute; /* needed for clipping */
+   clip: rect(0, 11em, 13em, 3em); /* clips the whole left half*/ 
+}
+
+.page-progreso .left-half-clipper4 { 
+   /* a round circle */
+   border-radius: 50%;
+   width: 8em;
+   height: 8em;
+   position: absolute; /* needed for clipping */
+   clip: rect(0, 8em, 10em, 0em); /* clips the whole left half*/ 
+}
+/* when p>50, don't clip left half*/
+.page-progreso .progress-circle1.over50 .left-half-clipper1 {
+   clip: rect(auto,auto,auto,auto);
+}
+
+.page-progreso .progress-circle2.over50 .left-half-clipper2 {
+   clip: rect(auto,auto,auto,auto);
+}
+
+.page-progreso .progress-circle3.over50 .left-half-clipper3 {
+   clip: rect(auto,auto,auto,auto);
+}
+
+.page-progreso .progress-circle4.over50 .left-half-clipper4 {
+   clip: rect(auto,auto,auto,auto);
+}
+.page-progreso .value-bar1 {
+   /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/ 
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 12em, 17em, 0);
+   width: 17em;
+   height: 17em;
+   border-radius: 50%;
+   border: 1.6em solid #7e6ea7; /*The border is 0.35 but making it larger removes visual artifacts */
+   /*background-color: #4D642D;*/ /* for debug */
+   box-sizing: border-box;
+  
+}
+.page-progreso .value-bar2 {
+   /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/ 
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 9em, 14em, 0);
+   width: 14em;
+   height: 14em;
+   border-radius: 50%;
+   border: 1.3em solid #1db6ba; /*The border is 0.35 but making it larger removes visual artifacts */
+   /*background-color: #4D642D;*/ /* for debug */
+   box-sizing: border-box;
+  
+}
+
+.page-progreso .value-bar3 {
+   /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/ 
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 6em, 11em, 0);
+   width: 11em;
+   height: 11em;
+   border-radius: 50%;
+   border: 1em solid #d68417; /*The border is 0.35 but making it larger removes visual artifacts */
+   /*background-color: #4D642D;*/ /* for debug */
+   box-sizing: border-box;
+  
+}
+
+.page-progreso .value-bar4 {
+   /*This is an overlayed square, that is made round with the border radius,
+   then it is cut to display only the left half, then rotated clockwise
+   to escape the outer clipping path.*/ 
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 3em, 8em, 0);
+   width: 8em;
+   height: 8em;
+   border-radius: 50%;
+   /*border: 0.7em solid red;*/ /*The border is 0.35 but making it larger removes visual artifacts */
+   /*background-color: #4D642D;*/ /* for debug */
+   box-sizing: border-box;
+  
+}
+/* Progress bar filling the whole right half for values above 50% */
+.page-progreso .progress-circle1.over50 .first50-bar1 {
+   /*Progress bar for the first 50%, filling the whole right half*/
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 17em, 17em, 9em);
+   background-color: #7e6ea7;
+   border-radius: 50%;
+   width: 17em;
+   height: 17em;
+}
+.page-progreso .progress-circle2.over50 .first50-bar2 {
+   /*Progress bar for the first 50%, filling the whole right half*/
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 14em, 14em, 9em);
+   background-color: #1db6ba;
+   border-radius: 50%;
+   width: 14em;
+   height: 14em;
+}
+
+.page-progreso .progress-circle3.over50 .first50-bar3 {
+   /*Progress bar for the first 50%, filling the whole right half*/
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 11em, 11em, 6em);
+   background-color: #d68417;
+   border-radius: 50%;
+   width: 11em;
+   height: 11em;
+}
+
+.page-progreso .progress-circle4.over50 .first50-bar4 {
+   /*Progress bar for the first 50%, filling the whole right half*/
+   position: absolute; /*needed for clipping*/
+   clip: rect(0, 11em, 11em, 6em);
+   background-color: #d68417;
+   border-radius: 50%;
+   width: 11em;
+   height: 11em;
+}
+.page-progreso .progress-circle1:not(.over50) .first50-bar1{ display: none; }
+
+.page-progreso .progress-circle2:not(.over50) .first50-bar2{ display: none; }
+
+.page-progreso .progress-circle3:not(.over50) .first50-bar3{ display: none; }
+
+.page-progreso .progress-circle4:not(.over50) .first50-bar4{ display: none; }
+
+
+/* Progress bar rotation position */
+.progress-circle1.p0 .value-bar1, .progress-circle2.p0 .value-bar2, .progress-circle3.p0 .value-bar3 { display: none; }
+.progress-circle1.p1 .value-bar1, .progress-circle2.p1 .value-bar2, .progress-circle3.p1 .value-bar3 { transform: rotate(4deg); }
+.progress-circle1.p2 .value-bar1, .progress-circle2.p2 .value-bar2, .progress-circle3.p2 .value-bar3 { transform: rotate(7deg); }
+.progress-circle1.p3 .value-bar1, .progress-circle2.p3 .value-bar2, .progress-circle3.p3 .value-bar3 { transform: rotate(11deg); }
+.progress-circle1.p4 .value-bar1, .progress-circle2.p4 .value-bar2, .progress-circle3.p4 .value-bar3 { transform: rotate(14deg); }
+.progress-circle1.p5 .value-bar1, .progress-circle2.p5 .value-bar2, .progress-circle3.p5 .value-bar3 { transform: rotate(18deg); }
+.progress-circle1.p6 .value-bar1, .progress-circle2.p6 .value-bar2, .progress-circle3.p6 .value-bar3 { transform: rotate(22deg); }
+.progress-circle1.p7 .value-bar1, .progress-circle2.p7 .value-bar2, .progress-circle3.p7 .value-bar3 { transform: rotate(25deg); }
+.progress-circle1.p8 .value-bar1, .progress-circle2.p8 .value-bar2, .progress-circle3.p8 .value-bar3 { transform: rotate(29deg); }
+.progress-circle1.p9 .value-bar1, .progress-circle2.p9 .value-bar2, .progress-circle3.p9 .value-bar3 { transform: rotate(32deg); }
+.progress-circle1.p10 .value-bar1, .progress-circle2.p10 .value-bar2, .progress-circle3.p10 .value-bar3 { transform: rotate(36deg); }
+.progress-circle1.p11 .value-bar1, .progress-circle2.p11 .value-bar2, .progress-circle3.p11 .value-bar3 { transform: rotate(40deg); }
+.progress-circle1.p12 .value-bar1, .progress-circle2.p12 .value-bar2, .progress-circle3.p12 .value-bar3 { transform: rotate(43deg); }
+.progress-circle1.p13 .value-bar1, .progress-circle2.p13 .value-bar2, .progress-circle3.p13 .value-bar3 { transform: rotate(47deg); }
+.progress-circle1.p14 .value-bar1, .progress-circle2.p14 .value-bar2, .progress-circle3.p14 .value-bar3 { transform: rotate(50deg); }
+.progress-circle1.p15 .value-bar1, .progress-circle2.p15 .value-bar2, .progress-circle3.p15 .value-bar3 { transform: rotate(54deg); }
+.progress-circle1.p16 .value-bar1, .progress-circle2.p16 .value-bar2, .progress-circle3.p16 .value-bar3 { transform: rotate(58deg); }
+.progress-circle1.p17 .value-bar1, .progress-circle2.p17 .value-bar2, .progress-circle3.p17 .value-bar3 { transform: rotate(61deg); }
+.progress-circle1.p18 .value-bar1, .progress-circle2.p18 .value-bar2, .progress-circle3.p18 .value-bar3 { transform: rotate(65deg); }
+.progress-circle1.p19 .value-bar1, .progress-circle2.p19 .value-bar2, .progress-circle3.p19 .value-bar3 { transform: rotate(68deg); }
+.progress-circle1.p20 .value-bar1, .progress-circle2.p20 .value-bar2, .progress-circle3.p20 .value-bar3 { transform: rotate(72deg); }
+.progress-circle1.p21 .value-bar1, .progress-circle2.p21 .value-bar2, .progress-circle3.p21 .value-bar3 { transform: rotate(76deg); }
+.progress-circle1.p22 .value-bar1, .progress-circle2.p22 .value-bar2, .progress-circle3.p22 .value-bar3 { transform: rotate(79deg); }
+.progress-circle1.p23 .value-bar1, .progress-circle2.p23 .value-bar2, .progress-circle3.p23 .value-bar3 { transform: rotate(83deg); }
+.progress-circle1.p24 .value-bar1, .progress-circle2.p24 .value-bar2, .progress-circle3.p24 .value-bar3 { transform: rotate(86deg); }
+.progress-circle1.p25 .value-bar1, .progress-circle2.p25 .value-bar2, .progress-circle3.p25 .value-bar3 { transform: rotate(90deg); }
+.progress-circle1.p26 .value-bar1, .progress-circle2.p26 .value-bar2, .progress-circle3.p26 .value-bar3 { transform: rotate(94deg); }
+.progress-circle1.p27 .value-bar1, .progress-circle2.p27 .value-bar2, .progress-circle3.p27 .value-bar3 { transform: rotate(97deg); }
+.progress-circle1.p28 .value-bar1, .progress-circle2.p28 .value-bar2, .progress-circle3.p28 .value-bar3 { transform: rotate(101deg); }
+.progress-circle1.p29 .value-bar1, .progress-circle2.p29 .value-bar2, .progress-circle3.p29 .value-bar3 { transform: rotate(104deg); }
+.progress-circle1.p30 .value-bar1, .progress-circle2.p30 .value-bar2, .progress-circle3.p30 .value-bar3 { transform: rotate(108deg); }
+.progress-circle1.p31 .value-bar1, .progress-circle2.p31 .value-bar2, .progress-circle3.p31 .value-bar3 { transform: rotate(112deg); }
+.progress-circle1.p32 .value-bar1, .progress-circle2.p32 .value-bar2, .progress-circle3.p32 .value-bar3 { transform: rotate(115deg); }
+.progress-circle1.p33 .value-bar1, .progress-circle2.p33 .value-bar2, .progress-circle3.p33 .value-bar3 { transform: rotate(119deg); }
+.progress-circle1.p34 .value-bar1, .progress-circle2.p34 .value-bar2, .progress-circle3.p34 .value-bar3 { transform: rotate(122deg); }
+.progress-circle1.p35 .value-bar1, .progress-circle2.p35 .value-bar2, .progress-circle3.p35 .value-bar3 { transform: rotate(126deg); }
+.progress-circle1.p36 .value-bar1, .progress-circle2.p35 .value-bar2, .progress-circle3.p35 .value-bar3 { transform: rotate(130deg); }
+.progress-circle1.p37 .value-bar1, .progress-circle2.p37 .value-bar2, .progress-circle3.p37 .value-bar3 { transform: rotate(133deg); }
+.progress-circle1.p38 .value-bar1, .progress-circle2.p38 .value-bar2, .progress-circle3.p38 .value-bar3 { transform: rotate(137deg); }
+.progress-circle1.p39 .value-bar1, .progress-circle2.p39 .value-bar2, .progress-circle3.p39 .value-bar3 { transform: rotate(140deg); }
+.progress-circle1.p40 .value-bar1, .progress-circle2.p40 .value-bar2, .progress-circle3.p40 .value-bar3 { transform: rotate(144deg); }
+.progress-circle1.p41 .value-bar1, .progress-circle2.p41 .value-bar2, .progress-circle3.p41 .value-bar3 { transform: rotate(148deg); }
+.progress-circle1.p42 .value-bar1, .progress-circle2.p42 .value-bar2, .progress-circle3.p42 .value-bar3 { transform: rotate(151deg); }
+.progress-circle1.p43 .value-bar1, .progress-circle2.p43 .value-bar2, .progress-circle3.p43 .value-bar3 { transform: rotate(155deg); }
+.progress-circle1.p44 .value-bar1, .progress-circle2.p44 .value-bar2, .progress-circle3.p44 .value-bar3 { transform: rotate(158deg); }
+.progress-circle1.p45 .value-bar1, .progress-circle2.p45 .value-bar2, .progress-circle3.p45 .value-bar3 { transform: rotate(162deg); }
+.progress-circle1.p47 .value-bar1, .progress-circle2.p47 .value-bar2, .progress-circle3.p47 .value-bar3 { transform: rotate(169deg); }
+.progress-circle1.p48 .value-bar1, .progress-circle2.p48 .value-bar2, .progress-circle3.p48 .value-bar3 { transform: rotate(173deg); }
+.progress-circle1.p49 .value-bar1, .progress-circle2.p49 .value-bar2, .progress-circle3.p49 .value-bar3 { transform: rotate(176deg); }
+.progress-circle1.p50 .value-bar1, .progress-circle2.p50 .value-bar2, .progress-circle3.p50 .value-bar3 { transform: rotate(180deg); }
+.progress-circle1.p51 .value-bar1, .progress-circle2.p51 .value-bar2, .progress-circle3.p51 .value-bar3 { transform: rotate(184deg); }
+.progress-circle1.p52 .value-bar1, .progress-circle2.p52 .value-bar2, .progress-circle3.p52 .value-bar3 { transform: rotate(187deg); }
+.progress-circle1.p53 .value-bar1, .progress-circle2.p53 .value-bar2, .progress-circle3.p53 .value-bar3 { transform: rotate(191deg); }
+.progress-circle1.p54 .value-bar1, .progress-circle2.p54 .value-bar2, .progress-circle3.p54 .value-bar3 { transform: rotate(194deg); }
+.progress-circle1.p55 .value-bar1, .progress-circle2.p55 .value-bar2, .progress-circle3.p55 .value-bar3 { transform: rotate(198deg); }
+.progress-circle1.p56 .value-bar1, .progress-circle2.p56 .value-bar2, .progress-circle3.p56 .value-bar3 { transform: rotate(202deg); }
+.progress-circle1.p57 .value-bar1, .progress-circle2.p57 .value-bar2, .progress-circle3.p57 .value-bar3 { transform: rotate(205deg); }
+.progress-circle1.p58 .value-bar1, .progress-circle2.p58 .value-bar2, .progress-circle3.p58 .value-bar3 { transform: rotate(209deg); }
+.progress-circle1.p59 .value-bar1, .progress-circle2.p59 .value-bar2, .progress-circle3.p59 .value-bar3 { transform: rotate(212deg); }
+.progress-circle1.p60 .value-bar1, .progress-circle2.p60 .value-bar2, .progress-circle3.p60 .value-bar3 { transform: rotate(216deg); }
+.progress-circle1.p61 .value-bar1, .progress-circle2.p61 .value-bar2, .progress-circle3.p61 .value-bar3 { transform: rotate(220deg); }
+.progress-circle1.p62 .value-bar1, .progress-circle2.p62 .value-bar2, .progress-circle3.p62 .value-bar3 { transform: rotate(223deg); }
+.progress-circle1.p63 .value-bar1, .progress-circle2.p63 .value-bar2, .progress-circle3.p63 .value-bar3 { transform: rotate(227deg); }
+.progress-circle1.p66 .value-bar1, .progress-circle2.p66 .value-bar2, .progress-circle3.p66 .value-bar3 { transform: rotate(238deg); }
+.progress-circle1.p67 .value-bar1, .progress-circle2.p67 .value-bar2, .progress-circle3.p67 .value-bar3 { transform: rotate(241deg); }
+.progress-circle1.p68 .value-bar1, .progress-circle2.p68 .value-bar2, .progress-circle3.p68 .value-bar3 { transform: rotate(245deg); }
+.progress-circle1.p69 .value-bar1, .progress-circle2.p69 .value-bar2, .progress-circle3.p69 .value-bar3 { transform: rotate(248deg); }
+.progress-circle1.p70 .value-bar1, .progress-circle2.p70 .value-bar2, .progress-circle3.p70 .value-bar3 { transform: rotate(252deg); }
+.progress-circle1.p71 .value-bar1, .progress-circle2.p71 .value-bar2, .progress-circle3.p71 .value-bar3 { transform: rotate(256deg); }
+.progress-circle1.p72 .value-bar1, .progress-circle2.p72 .value-bar2, .progress-circle3.p72 .value-bar3 { transform: rotate(259deg); }
+.progress-circle1.p73 .value-bar1, .progress-circle2.p73 .value-bar2, .progress-circle3.p73 .value-bar3 { transform: rotate(263deg); }
+.progress-circle1.p74 .value-bar1, .progress-circle2.p74 .value-bar2, .progress-circle3.p74 .value-bar3 { transform: rotate(266deg); }
+.progress-circle1.p75 .value-bar1, .progress-circle2.p75 .value-bar2, .progress-circle3.p75 .value-bar3 { transform: rotate(270deg); }
+.progress-circle1.p76 .value-bar1, .progress-circle2.p76 .value-bar2, .progress-circle3.p76 .value-bar3 { transform: rotate(274deg); }
+.progress-circle1.p77 .value-bar1, .progress-circle2.p77 .value-bar2, .progress-circle3.p77 .value-bar3 { transform: rotate(277deg); }
+.progress-circle1.p78 .value-bar1, .progress-circle2.p78 .value-bar2, .progress-circle3.p78 .value-bar3 { transform: rotate(281deg); }
+.progress-circle1.p79 .value-bar1, .progress-circle2.p79 .value-bar2, .progress-circle3.p79 .value-bar3 { transform: rotate(284deg); }
+.progress-circle1.p80 .value-bar1, .progress-circle2.p80 .value-bar2, .progress-circle3.p80 .value-bar3 { transform: rotate(288deg); }
+.progress-circle1.p81 .value-bar1, .progress-circle2.p81 .value-bar2, .progress-circle3.p81 .value-bar3 { transform: rotate(292deg); }
+.progress-circle1.p82 .value-bar1, .progress-circle2.p82 .value-bar2, .progress-circle3.p82 .value-bar3 { transform: rotate(295deg); }
+.progress-circle1.p83 .value-bar1, .progress-circle2.p83 .value-bar2, .progress-circle3.p83 .value-bar3 { transform: rotate(299deg); }
+.progress-circle1.p84 .value-bar1, .progress-circle2.p84 .value-bar2, .progress-circle3.p84 .value-bar3 { transform: rotate(302deg); }
+.progress-circle1.p85 .value-bar1, .progress-circle2.p85 .value-bar2, .progress-circle3.p85 .value-bar3 { transform: rotate(306deg); }
+.progress-circle1.p86 .value-bar1, .progress-circle2.p86 .value-bar2, .progress-circle3.p86 .value-bar3 { transform: rotate(310deg); }
+.progress-circle1.p87 .value-bar1, .progress-circle2.p87 .value-bar2, .progress-circle3.p87 .value-bar3 { transform: rotate(313deg); }
+.progress-circle1.p88 .value-bar1, .progress-circle2.p88 .value-bar2, .progress-circle3.p88 .value-bar3 { transform: rotate(317deg); }
+.progress-circle1.p89 .value-bar1, .progress-circle2.p89 .value-bar2, .progress-circle3.p89 .value-bar3 { transform: rotate(320deg); }
+.progress-circle1.p90 .value-bar1, .progress-circle2.p90 .value-bar2, .progress-circle3.p90 .value-bar3 { transform: rotate(324deg); }
+.progress-circle1.p91 .value-bar1, .progress-circle2.p91 .value-bar2, .progress-circle3.p91 .value-bar3 { transform: rotate(328deg); }
+.progress-circle1.p92 .value-bar1, .progress-circle2.p92 .value-bar2, .progress-circle3.p92 .value-bar3 { transform: rotate(331deg); }
+.progress-circle1.p93 .value-bar1, .progress-circle2.p93 .value-bar2, .progress-circle3.p93 .value-bar3 { transform: rotate(335deg); }
+.progress-circle1.p94 .value-bar1, .progress-circle2.p94 .value-bar2, .progress-circle3.p94 .value-bar3 { transform: rotate(338deg); }
+.progress-circle1.p95 .value-bar1, .progress-circle2.p95 .value-bar2, .progress-circle3.p95 .value-bar3 { transform: rotate(342deg); }
+.progress-circle1.p96 .value-bar1, .progress-circle2.p96 .value-bar2, .progress-circle3.p96 .value-bar3 { transform: rotate(346deg); }
+.progress-circle1.p97 .value-bar1, .progress-circle2.p97 .value-bar2, .progress-circle3.p97 .value-bar3 { transform: rotate(349deg); }
+.progress-circle1.p98 .value-bar1, .progress-circle2.p98 .value-bar2, .progress-circle3.p98 .value-bar3 { transform: rotate(353deg); }
+.progress-circle1.p99 .value-bar1, .progress-circle2.p99 .value-bar2, .progress-circle3.p99 .value-bar3 { transform: rotate(356deg); }
+.progress-circle1.p100 .value-bar1, .progress-circle2.p100 .value-bar2, .progress-circle3.p100 .value-bar3 { transform: rotate(360deg); }
+
+
+
+
+.page-progreso .contenido {
+    margin-top: 15%;padding: 0;
+}
+
+.page-progreso .contenido .title {
+    background-color: #FFF;
+}
+.page-progreso .contenido .title h3 {
+    text-align: center;font-size: 13px;color: #312051;font-weight: bold;text-transform: uppercase;
+}
+
+.page-progreso .contenido .info {
+    background-color: #ededec;
+    padding-bottom: 10px;
+}
+
+.page-progreso .contenido .info > p {
+    font-size: 14px;color: #999;padding-bottom: 20px;text-align: center;padding: 0px 16px;
+}
+
+.page-progreso .contenido .info > p > b {
+    color: #312051;
+}
+
+.page-progreso .contenido .info button {
+    background-color: #312051;margin: 0 auto;width: 100%;border-radius: 0px;padding: 18px 0px 18px 0px;
 }

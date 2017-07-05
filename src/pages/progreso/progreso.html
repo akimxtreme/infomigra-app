@@ -4,18 +4,80 @@
   See http://ionicframework.com/docs/components/#navigation for more info on
   Ionic pages and navigation.
 -->
-<ion-header>
+<ion-header class="header-page-progreso">
 
   <ion-navbar>
-    <ion-title>progreso</ion-title>
+    <ion-title>Tu progreso en Chile</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content class="page-progreso">
-<div class="wrapper">
-    <div class="arc arc_start"></div>    
-    <div class="arc arc_end"></div>
+
+<div class="circle1">
+	<div class="progress-circle1 over50 p70">
+   		<div class="left-half-clipper1">
+      		<div class="first50-bar1"></div>
+      		<div class="value-bar1"></div>
+   		</div>
+	</div>	
 </div>
+
+<div class="circle2">
+	<div class="progress-circle2 over50 p100">
+   		<div class="left-half-clipper2">
+      		<div class="first50-bar2"></div>
+      		<div class="value-bar2"></div>
+   		</div>
+	</div>	
+</div>
+
+<div class="circle3">
+	<div class="progress-circle3 over50 p100">
+   		<div class="left-half-clipper3">
+      		<div class="first50-bar3"></div>
+      		<div class="value-bar3"></div>
+   		</div>
+	</div>	
+</div>
+
+<div class="circle4">
+	<div class="progress-circle4">
+		<span><p class="percent">99<i>%</i></p><p class="text">de progreso</p></span>
+   		<div class="left-half-clipper4">
+      		<div class="first50-bar4"></div>
+      		<div class="value-bar4"></div>
+   		</div>
+	</div>	
+</div>
+<ion-grid class="contenido">
+	<ion-row>
+  		
+		<ion-col class="info" col-12>
+			<p class="arrow"><ion-icon name="arrow-dropdown"></ion-icon></p>
+  			<p>Tu progreso en Chile ha sido: <b>medio</b></p>
+  			<p>Estas a 1 paso de finalizar tu perfil, recibir información y seguir progresando en Chile</p>
+			
+			<ion-grid>
+			    <ion-row>
+			      <ion-col>
+			        <div></div>
+			      </ion-col>
+			      <ion-col col-6>
+			        <div>
+			        	<button ion-button small (click)="navigate('LineaPasosPage')">Continuar</button>
+			        </div>
+			      </ion-col>
+			      <ion-col>
+			        <div></div>
+			      </ion-col>
+				</ion-row>
+			</ion-grid>
+			
+  		</ion-col>
+
+	</ion-row>
+</ion-grid>
+
 </ion-content>
