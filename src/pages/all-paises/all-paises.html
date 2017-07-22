@@ -7,7 +7,7 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>CREANDO TU PERFIL {{ test }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -15,196 +15,95 @@
 <ion-content class="page-all-paises">
 <p style="text-align: center;color: #666; font-size: 16px;">¿De qué país eres?</p>
 <ion-grid class="contenido">
-		<ion-row>
+		<ion-row>			
+			<ion-col col-4 *ngFor="let item of countries">
+				<ion-row class="pais" (click)="mi_test(item.name)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p>{{ item.name }}</p>				
+				</ion-row>
+			</ion-col>
 			<ion-col col-4>
 				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
+					<p><img src="assets/flags/Bolivia.png" alt=""></p>
 					<p>Bolivia</p>				
 				</ion-row>
 			</ion-col>
 			<ion-col col-4>
 				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
+					<p><img src="assets/flags/Colombia.png" alt=""></p>				
 					<p>Colombia</p>
 				</ion-row>
 			</ion-col>
 			<ion-col col-4>
 				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
+					<p><img src="assets/flags/Peru.png" alt=""></p>				
 					<p>Perú</p>
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Afghanistan')">
+					<p><img src="assets/flags/Afghanistan.png" alt=""></p>
+					<p>Afghanistan</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Akrotiri')">
+					<p><img src="assets/flags/Albania.png" alt=""></p>
+					<p>Albania</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Algeria')">
+					<p><img src="assets/flags/Algeria.png" alt=""></p>
+					<p>Algeria</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('American-Samoa')">
+					<p><img src="assets/flags/American-Samoa.png" alt=""></p>
+					<p>American Samoa</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Andorra')">
+					<p><img src="assets/flags/Andorra.png" alt=""></p>
+					<p>Andorra</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Angola')">
+					<p><img src="assets/flags/Angola.png" alt=""></p>
+					<p>Angola</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Anguilla')">
+					<p><img src="assets/flags/Anguilla.png" alt=""></p>
+					<p>Anguilla</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
+				<ion-row class="pais" (click)="pais('Antigua-and-Barbuda')">
+					<p><img src="assets/flags/Antigua-and-Barbuda.png" alt=""></p>
+					<p>Antigua and Barbuda</p>				
 				</ion-row>
 			</ion-col>
 
 			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('bolivia')">
-					<p><img src="assets/flags/bolivia.jpg" alt=""></p>
-					<p>Bolivia</p>				
+				<ion-row class="pais" (click)="pais('Argentina')">
+					<p><img src="assets/flags/Argentina.png" alt=""></p>
+					<p>Argentina</p>				
 				</ion-row>
 			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('colombia')">
-					<p><img src="assets/flags/colombia.jpg" alt=""></p>				
-					<p>Colombia</p>
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="pais" (click)="pais('peru')">
-					<p><img src="assets/flags/peru.jpg" alt=""></p>				
-					<p>Perú</p>
-				</ion-row>
-			</ion-col>
+			
 
 		</ion-row>
 	</ion-grid>

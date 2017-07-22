@@ -28,7 +28,8 @@ import { LineaPasosPage } from '../pages/linea-pasos/linea-pasos';
 import { ThemePage } from '../pages/theme/theme';
 import { ProfilePage } from '../pages/profile/profile';
 import { VideoPage } from '../pages/video/video';
-
+import { CountriesProvider } from '../providers/countries/countries';
+import { HttpModule } from '@angular/http';
 
 
 @NgModule({
@@ -60,6 +61,7 @@ import { VideoPage } from '../pages/video/video';
   ],
   imports: [
     BrowserModule,
+    HttpModule,
     IonicModule.forRoot(MyApp)
   ],
   bootstrap: [IonicApp],
@@ -92,7 +94,8 @@ import { VideoPage } from '../pages/video/video';
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler}
+    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    CountriesProvider
   ]
 })
 export class AppModule {}

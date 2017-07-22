@@ -7,6 +7,10 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
  */
+
+ /*
+Rango de calculo:0-30%(bajo)31%-60%(medio)más de 60% (alto)
+ */
 @IonicPage()
 @Component({
   selector: 'page-progreso',

@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { LlegadaChilePage } from '../llegada-chile/llegada-chile';
+import { CountriesProvider } from '../../providers/countries/countries';
 
 /**
  * Generated class for the AllPaisesPage page.
@@ -12,15 +13,34 @@ import { LlegadaChilePage } from '../llegada-chile/llegada-chile';
 @Component({
   selector: 'page-all-paises',
   templateUrl: 'all-paises.html',
+  providers:[CountriesProvider]
 })
 export class AllPaisesPage {
   public range;
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public countries;
+  public test;
+  constructor(public navCtrl: NavController, public navParams: NavParams, private countriesJSON:CountriesProvider) {
   	this.range = 10;
+    this.test = "hola";
+
+    this.countriesJSON.getCountries().subscribe(
+            data => {
+                //.testData = data.json();
+                this.countries = data.json();
+            },
+            err => console.error(err),
+            () => console.log( JSON.stringify(this.countries))
+        );
+
+
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad AllPaisesPage');
+  }
+
+  mi_test(valor){
+      this.test = valor;
   }
 
   pais(valor){ 	
