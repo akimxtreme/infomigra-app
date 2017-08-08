@@ -15,7 +15,28 @@ import { PaisPage } from '../pais/pais';
 })
 export class SexoPage {
 
+  public idioma;
+  
+  // Información
+  public title;
+  public text_question;
+  public gender_m;
+  public gender_f;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
+    this.idioma = this.navParams.get('idioma');
+
+    if(this.idioma == "es" || this.idioma == ""){
+      this.title = "CREANDO TU PERFIL";
+      this.text_question = "¿Cuál es tu sexo?";
+      this.gender_m = "Masculino";
+      this.gender_f = "Femenino";
+    }else{
+      this.title = "KREYE PWOFIL OU";
+      this.text_question = "Ki sa ki se sèks ou?";
+      this.gender_m = "Gason";
+      this.gender_f = "Fi";
+    }
   }
 
   ionViewDidLoad() {
@@ -37,6 +58,16 @@ export class SexoPage {
   			genero: valor
 
   		});
+    this.navCtrl.push(
+      PaisPage, 
+      {
+        idioma: this.idioma,
+        imagen: url,
+        genero: valor
+      }, 
+      {
+        animate: false
+      });
 
   }
 }

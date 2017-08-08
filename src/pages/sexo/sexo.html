@@ -1,12 +1,12 @@
 <ion-header class="header-page-sexo">
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content class="page-sexo">
-<p style="text-align: center;color: #666; font-size: 17px;">¿Cuál es tu sexo?</p>
+<p style="text-align: center;color: #666; font-size: 17px;">{{ text_question }}</p>
 <p><img src="assets/sexo.png"></p>
 
 </ion-content>
@@ -16,13 +16,13 @@
 			<ion-col col-6>
 				<ion-row class="genero">
 					<p><img (click)="genero('M')" src="assets/simbolo-masculino.png" alt=""></p>
-					<p>Masculino</p>
+					<p>{{ gender_m }}</p>
 				</ion-row>
 			</ion-col>
 			<ion-col col-6>
 				<ion-row class="genero">
 					<p><img (click)="genero('F')" src="assets/simbolo-femenino.png" alt=""></p>
-					<p>Femenino</p>
+					<p>{{ gender_f }}</p>
 				</ion-row>
 			</ion-col>
 		</ion-row>

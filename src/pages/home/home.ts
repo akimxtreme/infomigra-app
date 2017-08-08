@@ -12,11 +12,24 @@ export class HomePage {
   public disabled_es;
   public disabled_cr;
   public ruta;
+
+  private warmth;
+  public valor;
+
+  public idioma;
+
+  public color_es;
+  public color_cr;
+
   isChecked:boolean = false;
   constructor(public navCtrl: NavController) {
     this.clase_es = "bg_button";
     this.disabled_cr = true;
     this.disabled_es = false;
+    this.warmth = 2;
+
+    this.color_cr = "";
+    this.color_es = "";
   
   }
 
@@ -63,6 +76,39 @@ export class HomePage {
   	//this.clase = event.srcElement.attributes.value;
   	// this.clase = event.currentTarget.id;
 
+  }
+
+  /* 
+    Toma el valor final del rango y redireciona el sitio al idioma seleccionado.
+    
+      1  =>  Español
+      2  =>  Off
+      3  =>  Creol  
+
+  */
+
+  valorRango(valor){
+     //this.valor = valor.value;
+     switch (valor.value) {
+        case 1:
+          this.color_es = "color_select";
+          this.color_cr = "";
+          //this.navCtrl.push(InfoPage, {idioma: "es"}, {animate: false});
+          this.navCtrl.push(InfoPage, {idioma: "es"});
+        break;
+        
+        case 3:
+          this.color_cr = "color_select";
+          this.color_es = "";
+          //this.navCtrl.push(InfoPage, {idioma: "cr"}, {animate: false});
+          this.navCtrl.push(InfoPage, {idioma: "cr"});
+        break;
+       
+        default:
+          this.color_cr = "";
+          this.color_es = "";
+        break;
+     }
   }
 
 }

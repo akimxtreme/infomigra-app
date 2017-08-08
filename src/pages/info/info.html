@@ -4,12 +4,12 @@
 <ion-grid class="contenido">
 	<ion-row>
   		<ion-col class="title" col-12>
-  			<h3 ion-text color="primary">Información y guía para inmigrantes</h3>
+  			<h3 ion-text color="primary">{{ title }}</h3>
   		</ion-col>
 
 		<ion-col class="info" col-12>
 			<p class="arrow"><ion-icon name="arrow-dropdown"></ion-icon></p>
-  			<p>La información que necesitas para una rápida y mejor inserción en Chile</p>			
+  			<p>{{ description }}</p>			
 			<ion-grid>
 			    <ion-row>
 			      <ion-col>
@@ -17,7 +17,7 @@
 			      </ion-col>
 			      <ion-col col-6>
 			        <div>
-			        	<button ion-button small (click)="navigate('Info2Page')">Siguiente</button>
+			        	<button ion-button small (click)="navigate('Info2Page')">{{ text_button }}</button>
 			        </div>
 			      </ion-col>
 			      <ion-col>

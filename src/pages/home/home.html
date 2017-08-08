@@ -3,6 +3,15 @@
     <img class="image_home" src="assets/home.png">
   </p>
 
+    <ion-list>   
+        <ion-item>
+          <ion-range min="1" max="3" step="1" snaps="true" [(ngModel)]="warmth" color="" (ionChange)="valorRango($event)">
+            <ion-label range-left class="label_left small-text {{ color_es }}">Español {{ valor }}</ion-label>
+            <ion-label range-right class="label_right {{ color_cr }}">Creol</ion-label>
+          </ion-range>
+        </ion-item>
+    </ion-list>
+  <!--
   <ion-grid>
     <ion-row>
       <ion-col>
@@ -24,6 +33,7 @@
       </ion-col>
     </ion-row>
   </ion-grid>
+  -->
 
 </ion-content>
 

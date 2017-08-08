@@ -15,18 +15,37 @@ import { Info3Page } from '../info3/info3';
 })
 export class InfoPage {
 
+
+  public idioma;
+
+  // Información
+  public title;
+  public description;
+  public text_button;
+
+
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
-  	//this.navCtrl.push(WelcomePage);
+
+    this.idioma = this.navParams.get('idioma');
+
+    if(this.idioma == "es" || this.idioma == ""){
+      this.title = "Información y guía para inmigrantes";
+      this.description = "La información que necesitas para una rápida y mejor inserción en Chile";
+      this.text_button = "Siguiente";
+    }else{
+      this.title = "Enfòmasyon ak konsèy pou imigran";
+      this.description = "enfòmasyon ou bezwen an pou ensèsyon rapid ak pi bon nan peyi Chili";
+      this.text_button = "kontinye";
+    }
   }
 
   navigate(miurl){
   	if(miurl == 'Info2Page') {
-  		this.navCtrl.push(Info2Page);
+      this.navCtrl.push(Info2Page, {idioma: this.idioma }, {animate: false});
   	}
   	if(miurl == 'Info3Page') {
-  		this.navCtrl.push(Info3Page);
-  	}
-  	
+  		this.navCtrl.push(Info3Page, {idioma: this.idioma }, {animate: false});
+  	}  	
   }
-
 }

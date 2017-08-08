@@ -56,5 +56,78 @@
 .bg_button button {
 	background-color: #1db6ba;
 }
-// 
+
+/*
+Colorea el idioma seleccionado
+*/
+
+.color_select {
+	color: #1db6ba !important;
+}
+
+.page-home .range-md .range-knob {
+	border: 2px solid #FFF;
+	background: #7e6ea7;
+	width: 25px;
+	height: 25px;
+	top: 10px;
+	left: 8px;
+}
+
+.page-home .range-md .range-knob-min.range-knob-min .range-knob {
+	background: #7e6ea7;
+	border: 2px solid #FFF;
+	/*margin-left: -5px;*/
+}
+
+.page-home .range-md .range-bar-active {
+	background: transparent;
+}
+.page-home .range-md .range-bar {
+	top: 15px;
+	height: 15px;
+	border-radius: 5px;
+	border: 1px solid #FFF;
+	background-color: #7e6ea7;
+}
+
+.page-home .item-range ion-range .label_left {
+	width: 38%;
+	/* 
+	box-shadow: 0px 0px 1px #000;
+	padding-right: 1%;
+	*/
+text-align: right;
+color: #FFF;
+font-size: 0.8em;
+
+}
+
+.page-home .item-range ion-range .label_right {
+width: 38%;
+/* 
+	box-shadow: 0px 0px 1px #000;
+	padding-right: 1%;
+	*/
+text-align: left;
+color: #FFF;
+font-size: 0.8em;
+
+}
+
+.page-home .range-md .range-tick-active, .page-home .range-md .range-tick {
+	background: transparent;
+}
+
+
+.page-home .range-md {
+	padding: 0px;
+}
+
+.page-home  .item-md {
+	background-color: transparent;
+}
+
+
+
 

@@ -1,29 +1,29 @@
 <ion-content class="page-welcome">
 <p><img src="assets/info.png"></p>
-<p class="title">¡Bienvenido!</p>
+<p class="title">{{ title }}</p>
 <ion-grid class="contenido">
 	<p class="arrow"><ion-icon name="arrow-dropdown"></ion-icon></p>
 	<ion-row>
 
 		<ion-col class="info" col-12>
-			<p>Para obtener información personalizada y poder guiarte debes <b (click)="navigate('SeguridadPage')">crear tu perfil</b></p> 
-			<p>De los contrario accede a <br><b (click)="navigate('ThemePage')">información general</b></p>     		
+			<p>{{ text_1 }} <b (click)="navigate('SeguridadPage')">{{ text_perfil }}</b></p> 
+			<p>{{ text_2 }} <br><b (click)="navigate('ThemePage')">{{ text_info_general }}</b></p>     		
 		</ion-col>
 
   		<ion-col col-6>
 			<ion-row>
-				<button class="btn-perfil" ion-button small full (click)="navigate('SeguridadPage')">Crear Perfil</button>
+				<button class="btn-perfil" ion-button small full (click)="navigate('SeguridadPage')">{{ text_perfil }}</button>
 			</ion-row>
 		</ion-col>
 		<ion-col col-6>
 			<ion-row>
-				<button class="btn-tema" ion-button small full (click)="navigate('ThemePage')">Información general</button>
+				<button class="btn-tema" ion-button small full (click)="navigate('ThemePage')">{{ text_info_general }}</button>
 			</ion-row>
 		</ion-col>
 
 		<ion-col col-12 class="cuenta">
-	    	<p>¿Ya tienes una cuenta?</p> 
-	     	<p class="entra"><b>entra ahora</b></p>      
+	    	<p>{{ text_account }}</p> 
+	     	<p class="entra"><b>{{ text_login }}</b></p>      
 		</ion-col>
 
 	</ion-row>
