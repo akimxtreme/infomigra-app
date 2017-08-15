@@ -28,12 +28,12 @@ export class SeguridadPage {
     if(this.idioma == "es" || this.idioma == ""){
       this.description_1 = "Todos tus datos personales serán mantenidos en ";
       this.text_link = "total confidencialidad. ";
-      this.description_2 = "El hecho de agregarlos en esta aplicación no tendrá consecuencias, son solo para brindarte información.";
+      this.description_2 = "Agregarlos en esta aplicación no tendrá consecuencias, son solo para ayudarte. ";
       this.text_button = "Siguiente";
     }else{
-      this.description_1 = "Tout done pèsonèl yo pral kenbe nan";
-      this.text_link = "total konfidansyalite";
-      this.description_2 = "Add lefèt pa pral afekte aplikasyon sa a, ou se jis ba ou enfòmasyon.";
+      this.description_1 = "Tout done pèsonèl yo pral byen konsève nan";
+      this.text_link = "total konfidansyalite. ";
+      this.description_2 = "ajoute yo nan aplikasyon sa a pa pral genyen okenn konsekans, se sèlman pou nou ka ede ou.";
       this.text_button = "kontinye";
     }
   }

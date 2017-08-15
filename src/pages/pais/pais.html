@@ -1,12 +1,12 @@
 <ion-header class="header-page-pais">
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content class="page-pais">
-<p style="text-align: center;color: #666; font-size: 17px;">¿De qué país eres?</p>
+<p style="text-align: center;color: #666; font-size: 17px;">{{ text_question }}</p>
 <p><img src="assets/{{ imagen }}"></p>
 </ion-content>
 <ion-footer class="page-pais">
@@ -19,24 +19,21 @@
 			</ion-col>
 			<ion-col col-10>
 				<ion-row>
-			  		<ion-col col-4>
-						<ion-row class="pais" (click)="pais('bolivia')">
-							<p><img src="assets/flags/Bolivia.png" alt=""></p>
-							<p>Bolivia</p>				
+			  		<ion-col col-4 *ngFor="let item of countries">
+			
+						<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id)">
+							<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+							<p>{{ item.name }}</p>				
 						</ion-row>
-					</ion-col>
-					<ion-col col-4>
-						<ion-row class="pais" (click)="pais('colombia')">
-							<p><img src="assets/flags/Colombia.png" alt=""></p>				
-							<p>Colombia</p>
+
+						<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="pais(item.id)">
+							<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+							<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+							<p style="color:red;" *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
 						</ion-row>
+
 					</ion-col>
-					<ion-col col-4>
-						<ion-row class="pais" (click)="pais('peru')">
-							<p><img src="assets/flags/Peru.png" alt=""></p>				
-							<p>Perú</p>
-						</ion-row>
-					</ion-col>
+					
 				</ion-row>
 			</ion-col>
 			<ion-col col-1>

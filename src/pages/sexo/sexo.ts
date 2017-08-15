@@ -33,9 +33,9 @@ export class SexoPage {
       this.gender_f = "Femenino";
     }else{
       this.title = "KREYE PWOFIL OU";
-      this.text_question = "Ki sa ki se sèks ou?";
+      this.text_question = "Ki seks ou?";
       this.gender_m = "Gason";
-      this.gender_f = "Fi";
+      this.gender_f = "Fanm ";
     }
   }
 
@@ -53,11 +53,6 @@ export class SexoPage {
   		url = "masculino.png"
   	}
 
-  	this.navCtrl.push(PaisPage,{
-  			imagen: url,
-  			genero: valor
-
-  		});
     this.navCtrl.push(
       PaisPage, 
       {

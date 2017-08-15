@@ -34,8 +34,8 @@ export class InfoPage {
       this.description = "La información que necesitas para una rápida y mejor inserción en Chile";
       this.text_button = "Siguiente";
     }else{
-      this.title = "Enfòmasyon ak konsèy pou imigran";
-      this.description = "enfòmasyon ou bezwen an pou ensèsyon rapid ak pi bon nan peyi Chili";
+      this.title = "ENFÒMASYON AK GID POU IMIGRAN YO";
+      this.description = "enfòmasyon  ke ou bezwen  pou ensèsyon rapid ou nan peyi Chili";
       this.text_button = "kontinye";
     }
   }

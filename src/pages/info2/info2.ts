@@ -30,8 +30,8 @@ export class Info2Page {
       this.description = "Encuentra los principales temas que pueden interesarte, explicados de manera clara y sencilla";
       this.text_button = "Siguiente";
     }else{
-      this.title = "Jwenn enfòmasyon jeneral";
-      this.description = "Jwenn pwoblèm yo ki prensipal ki ka nan enterè, eksplike nan klè ak senp";
+      this.title = "RESEVWA ENFÒMASYON GENERAL";
+      this.description = "Rankontre prensipal tem yo ki kapab enteresew, ki eksplike byen klè e trè senp";
       this.text_button = "kontinye";
     }
   }

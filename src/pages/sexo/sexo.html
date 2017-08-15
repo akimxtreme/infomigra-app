@@ -6,22 +6,22 @@
 
 </ion-header>
 <ion-content class="page-sexo">
-<p style="text-align: center;color: #666; font-size: 17px;">{{ text_question }}</p>
-<p><img src="assets/sexo.png"></p>
+<p class="title">{{ text_question }}</p>
+<p><img src="assets/sexo/sexo.png"></p>
 
 </ion-content>
 <ion-footer class="page-sexo">
- 	<ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:0%;">
+ 	<ion-grid class="contenido">
 		<ion-row>
 			<ion-col col-6>
 				<ion-row class="genero">
-					<p><img (click)="genero('M')" src="assets/simbolo-masculino.png" alt=""></p>
+					<p><img (click)="genero('M')" src="assets/sexo/simbolo-masculino.png" alt=""></p>
 					<p>{{ gender_m }}</p>
 				</ion-row>
 			</ion-col>
 			<ion-col col-6>
 				<ion-row class="genero">
-					<p><img (click)="genero('F')" src="assets/simbolo-femenino.png" alt=""></p>
+					<p><img (click)="genero('F')" src="assets/sexo/simbolo-femenino.png" alt=""></p>
 					<p>{{ gender_f }}</p>
 				</ion-row>
 			</ion-col>

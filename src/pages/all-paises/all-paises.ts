@@ -16,12 +16,27 @@ import { CountriesProvider } from '../../providers/countries/countries';
   providers:[CountriesProvider]
 })
 export class AllPaisesPage {
-  public range;
   public countries;
   public test;
+  public idioma;
+
+  // Información
+  public title;
+  public text_question;
+
   constructor(public navCtrl: NavController, public navParams: NavParams, private countriesJSON:CountriesProvider) {
-  	this.range = 10;
     this.test = "hola";
+
+    this.idioma = this.navParams.get('idioma');
+
+    if(this.idioma == "es" || this.idioma == ""){
+      this.title = "CREANDO TU PERFIL";
+      this.text_question = "¿De qué país eres?";
+    }else{
+      this.title = "KREYE PWOFIL OU";
+      this.text_question = "Moun ki peyi ou ye?";
+    }
+
 
     this.countriesJSON.getCountries().subscribe(
             data => {

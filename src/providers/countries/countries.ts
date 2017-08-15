@@ -16,7 +16,14 @@ export class CountriesProvider {
   }
 
    getCountries() {
-        let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
+        // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
+        let repos = this.http.get('http://localhost:3000/countries.json');
+        return repos;
+    }
+
+   getCountries3() {
+        // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
+        let repos = this.http.get('http://localhost:3000/countries/countries_three.json');
         return repos;
     }
 
