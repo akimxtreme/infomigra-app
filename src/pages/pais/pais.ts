@@ -26,10 +26,14 @@ export class PaisPage {
   public title;
   public text_question;
 
+  // Mis datos
+  public mi_genero;
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private countriesJSON:CountriesProvider) {
     this.idioma = this.navParams.get('idioma');
   	this.imagen = navParams.get('imagen');
+    this.mi_genero = this.navParams.get('genero');
 
     if(this.idioma == "es" || this.idioma == ""){
       this.title = "CREANDO TU PERFIL";
@@ -54,21 +58,27 @@ export class PaisPage {
     console.log('ionViewDidLoad PaisPage');
   }
 
-  pais(valor){ 	
+  nombre_img_personaje(generic_image,flag_image){
+    var nombre = "generico";
+    if(generic_image != true){
+       nombre = flag_image.substr(0,flag_image.length - 4);
+    }
+    return nombre;
+  }
+
+  pais(id_pais,generic_image,flag_image){ 	
 
   	this.navCtrl.push(LlegadaChilePage,{
-  			pais: valor,
-  			img_pais: valor.toLowerCase() + "-a-" + this.navParams.get('genero').toLowerCase() + ".png",
-        img_pais_b: valor.toLowerCase() + "-b-" + this.navParams.get('genero').toLowerCase() + ".png"
-        // venezuela-a-m.jpg
-
+  			pais: id_pais,
+        genero: this.mi_genero,
+        personaje: this.nombre_img_personaje(generic_image,flag_image),
+        idioma: this.navParams.get('idioma')
   		});
-      
-      
   }
+
   allPaises(){
     this.navCtrl.push(AllPaisesPage,{
-        genero: this.navParams.get('genero'),
+        genero: this.mi_genero,
         idioma: this.navParams.get('idioma')
       });
 

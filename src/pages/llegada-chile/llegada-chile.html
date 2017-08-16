@@ -1,13 +1,14 @@
 <ion-header class="header-page-llegada-chile">
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content class="page-llegada-chile">
-<p style="text-align: center;color: #666; font-size: 17px;">¿Cómo llegaste a Chile?</p>
-<p><img src="assets/nacionalidad/{{ img_pais }}"></p>
+<p style="text-align: center;color: #666; font-size: 17px;">{{ text_question }}</p>
+<!-- bolivia-a-f.png -->
+<p><img src="{{ url_personaje }}"></p>
 </ion-content>
 <ion-footer class="page-llegada-chile">
 <ion-grid class="contenido" style="border-top: 1px solid #312051;border-bottom: 1px solid #312051; margin-top:0%;">
@@ -19,6 +20,20 @@
 		</ion-col>
 		<ion-col col-10>
 			<ion-row>
+				<ion-col col-4 *ngFor="let item of situations_arrivals_country">
+
+					<ion-row *ngIf="idioma == 'es'" class="estado" (click)="llegada(item.id)">
+						<p><img src="assets/situations_arrivals_country/{{ item.image }}" alt=""></p>
+						<p>{{ item.name }}</p>				
+					</ion-row>
+
+					<ion-row *ngIf="idioma != 'es'" class="estado" (click)="llegada(item.id)">
+						<p><img src="assets/situations_arrivals_country/{{ item.image }}" alt=""></p>
+						<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+						<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>			
+					</ion-row>
+				</ion-col>
+				<!--
 				<ion-col col-4>
 					<ion-row class="estado" (click)="llegada('irregular')">
 						<p><img src="assets/irregular.png" alt=""></p>
@@ -37,6 +52,7 @@
 						<p>Trabajador</p>
 					</ion-row>
 				</ion-col>
+				-->
 			</ion-row>
 		</ion-col>
 		<ion-col col-1>

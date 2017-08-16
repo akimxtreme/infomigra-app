@@ -7,7 +7,7 @@
 <ion-header class="header-page-all-paises">
 
   <ion-navbar>
-    <ion-title>{{ title }} {{test}}</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -18,15 +18,15 @@
 		<ion-row>			
 			<ion-col col-4 *ngFor="let item of countries">
 
-				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="mi_test(item.id)">
+				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
 					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
 					<p>{{ item.name }}</p>				
 				</ion-row>
 
-				<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="mi_test(item.id)">
+				<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
 					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
 					<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
-					<p style="color:red;" *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
+					<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
 				</ion-row>
 			</ion-col>
 			

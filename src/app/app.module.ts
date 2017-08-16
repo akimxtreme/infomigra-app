@@ -30,6 +30,7 @@ import { ProfilePage } from '../pages/profile/profile';
 import { VideoPage } from '../pages/video/video';
 import { CountriesProvider } from '../providers/countries/countries';
 import { HttpModule } from '@angular/http';
+import { SituationsArrivalsCountryProvider } from '../providers/situations-arrivals-country/situations-arrivals-country';
 
 
 @NgModule({
@@ -95,7 +96,8 @@ import { HttpModule } from '@angular/http';
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    CountriesProvider
+    CountriesProvider,
+    SituationsArrivalsCountryProvider
   ]
 })
 export class AppModule {}

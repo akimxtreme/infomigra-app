@@ -10,6 +10,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class CountriesProvider {
+  public direccion = "http://localhost:3000/";
 
   constructor(public http: Http) {
     console.log('Hello CountriesProvider Provider');
@@ -17,13 +18,13 @@ export class CountriesProvider {
 
    getCountries() {
         // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
-        let repos = this.http.get('http://localhost:3000/countries.json');
+        let repos = this.http.get(this.direccion + 'countries.json');
         return repos;
     }
 
    getCountries3() {
         // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
-        let repos = this.http.get('http://localhost:3000/countries/countries_three.json');
+        let repos = this.http.get(this.direccion + 'countries/countries_three.json');
         return repos;
     }
 
