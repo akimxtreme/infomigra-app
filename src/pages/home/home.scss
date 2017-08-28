@@ -86,32 +86,32 @@ Colorea el idioma seleccionado
 .page-home .range-md .range-bar {
 	top: 15px;
 	height: 15px;
-	border-radius: 5px;
+	border-radius: 10px;
 	border: 1px solid #FFF;
 	background-color: #7e6ea7;
 }
 
 .page-home .item-range ion-range .label_left {
-	width: 38%;
+	width: 39%;
 	/* 
 	box-shadow: 0px 0px 1px #000;
 	padding-right: 1%;
 	*/
-text-align: right;
-color: #FFF;
-font-size: 0.8em;
+	text-align: right;
+	color: #FFF;
+	font-size: 0.8em;
 
 }
 
 .page-home .item-range ion-range .label_right {
-width: 38%;
-/* 
+	width: 39%;
+	/* 
 	box-shadow: 0px 0px 1px #000;
 	padding-right: 1%;
 	*/
-text-align: left;
-color: #FFF;
-font-size: 0.8em;
+	text-align: left;
+	color: #FFF;
+	font-size: 0.8em;
 
 }
 
@@ -126,6 +126,10 @@ font-size: 0.8em;
 
 .page-home  .item-md {
 	background-color: transparent;
+}
+
+.page-home-footer::before {
+	background-image: none;
 }
 
 

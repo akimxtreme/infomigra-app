@@ -11,14 +11,15 @@ import 'rxjs/add/operator/map';
 @Injectable()
 export class CountriesProvider {
   public direccion = "http://localhost:3000/";
+  //public direccion = "https://fast-fjord-45847.herokuapp.com/";
 
   constructor(public http: Http) {
     console.log('Hello CountriesProvider Provider');
   }
 
-   getCountries() {
+   getCountries(continent_id) {
         // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
-        let repos = this.http.get(this.direccion + 'countries.json');
+        let repos = this.http.get(this.direccion + 'countries.json' + '?continent_id=' + continent_id);
         return repos;
     }
 

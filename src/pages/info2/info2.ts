@@ -38,10 +38,10 @@ export class Info2Page {
 
   navigate(miurl){
   	if(miurl == 'InfoPage') {
-      this.navCtrl.push(InfoPage, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(InfoPage, {idioma: this.idioma }, {animate: true, animation:'transition',duration:500,direction:'back'});
   	}
   	if(miurl == 'Info3Page') {
-  		this.navCtrl.push(Info3Page, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(Info3Page, {idioma: this.idioma }, {animate: true, animation:'transition',duration:500,direction:'forward'});
   	}
   	
   }

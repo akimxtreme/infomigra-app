@@ -94,14 +94,15 @@ export class HomePage {
           this.color_es = "color_select";
           this.color_cr = "";
           //this.navCtrl.push(InfoPage, {idioma: "es"}, {animate: false});
-          this.navCtrl.push(InfoPage, {idioma: "es"});
+          //this.navCtrl.push(InfoPage, {idioma: "es"});
+          this.navCtrl.push(InfoPage, {idioma: "es"}, {animate: true, animation:'transition',duration:500,direction:'forward'});
         break;
         
         case 3:
           this.color_cr = "color_select";
           this.color_es = "";
-          //this.navCtrl.push(InfoPage, {idioma: "cr"}, {animate: false});
-          this.navCtrl.push(InfoPage, {idioma: "cr"});
+          // this.navCtrl.push(InfoPage, {idioma: "cr"}, {animate: false});
+          this.navCtrl.push(InfoPage, {idioma: "cr"}, {animate: true, animation:'transition',duration:500,direction:'forward'});
         break;
        
         default:

@@ -16,7 +16,63 @@
 <p style="text-align: center;color: #666; font-size: 16px;">{{ text_question }}</p>
 <ion-grid class="contenido">
 		<ion-row>			
-			<ion-col col-4 *ngFor="let item of countries">
+			<ion-col col-4 *ngFor="let item of america">
+
+				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p>{{ item.name }}</p>				
+				</ion-row>
+
+				<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+					<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
+				</ion-row>
+			</ion-col>
+
+			<ion-col col-4 *ngFor="let item of europa">
+
+				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p>{{ item.name }}</p>				
+				</ion-row>
+
+				<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+					<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
+				</ion-row>
+			</ion-col>
+
+			<ion-col col-4 *ngFor="let item of asia">
+
+				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p>{{ item.name }}</p>				
+				</ion-row>
+
+				<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+					<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
+				</ion-row>
+			</ion-col>
+
+			<ion-col col-4 *ngFor="let item of africa">
+
+				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p>{{ item.name }}</p>				
+				</ion-row>
+
+				<ion-row *ngIf="idioma != 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
+					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>
+					<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+					<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>				
+				</ion-row>
+			</ion-col>
+
+			<ion-col col-4 *ngFor="let item of oceania">
 
 				<ion-row *ngIf="idioma == 'es'"  class="pais" (click)="pais(item.id,item.generic_image,item.flag_image)">
 					<p><img src="assets/flags/{{ item.flag_image }}" alt=""></p>

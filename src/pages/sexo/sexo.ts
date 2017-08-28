@@ -61,7 +61,10 @@ export class SexoPage {
         genero: valor
       }, 
       {
-        animate: false
+        animate: true,
+        animation:'transition',
+        duration: 700,
+        direction: 'forward'
       });
 
   }

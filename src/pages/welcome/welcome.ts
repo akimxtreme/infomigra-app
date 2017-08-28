@@ -61,10 +61,11 @@ export class WelcomePage {
 
   navigate(miurl){
   	if(miurl == 'ThemePage') {
-  		this.navCtrl.push(ThemePage, {idioma: this.idioma }, {animate: false});
+  		// this.navCtrl.push(ThemePage, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(ThemePage, {idioma: this.idioma });
   	}
   	if(miurl == 'SeguridadPage') {
-  		this.navCtrl.push(SeguridadPage, {idioma: this.idioma }, {animate: false});
+  		this.navCtrl.push(SeguridadPage, {idioma: this.idioma });
   	}
   }
 

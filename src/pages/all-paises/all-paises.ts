@@ -16,7 +16,7 @@ import { CountriesProvider } from '../../providers/countries/countries';
   providers:[CountriesProvider]
 })
 export class AllPaisesPage {
-  public countries;
+  // public countries;
   public idioma;
 
   // Información
@@ -25,6 +25,13 @@ export class AllPaisesPage {
 
   // Mis datos
   public mi_genero;
+
+  // Continentes
+  public america;
+  public europa;
+  public asia;
+  public africa;
+  public oceania;
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private countriesJSON:CountriesProvider) {
     this.idioma = this.navParams.get('idioma');
@@ -39,14 +46,58 @@ export class AllPaisesPage {
       this.text_question = "Moun ki peyi ou ye?";
     }
 
+    /*
+    Continent IDs
+    América = 1
+    Europa  = 2
+    Asia    = 3
+    África  = 4
+    Oceanía = 5
+    */
 
-    this.countriesJSON.getCountries().subscribe(
+    this.countriesJSON.getCountries('1').subscribe(
             data => {
                 //.testData = data.json();
-                this.countries = data.json();
+                this.america = data.json();
             },
             err => console.error(err),
-            () => console.log( JSON.stringify(this.countries))
+            () => console.log( JSON.stringify(this.america))
+        );
+
+    this.countriesJSON.getCountries('2').subscribe(
+            data => {
+                //.testData = data.json();
+                this.europa = data.json();
+            },
+            err => console.error(err),
+            () => console.log( JSON.stringify(this.europa))
+        );
+
+    this.countriesJSON.getCountries('3').subscribe(
+            data => {
+                //.testData = data.json();
+                this.asia = data.json();
+            },
+            err => console.error(err),
+            () => console.log( JSON.stringify(this.asia))
+        );
+
+    this.countriesJSON.getCountries('4').subscribe(
+            data => {
+                //.testData = data.json();
+                this.africa = data.json();
+            },
+            err => console.error(err),
+            () => console.log( JSON.stringify(this.africa))
+        );
+
+    this.countriesJSON.getCountries('5').subscribe(
+            data => {
+                //.testData = data.json();
+                this.oceania = data.json();
+            },
+            err => console.error(err),
+            () => console.log( JSON.stringify(this.oceania))
         );
 
 
@@ -67,12 +118,21 @@ export class AllPaisesPage {
 
   pais(id_pais,generic_image,flag_image){   
 
-    this.navCtrl.push(LlegadaChilePage,{
+    this.navCtrl.push(LlegadaChilePage,
+      {
         pais: id_pais,
         genero: this.mi_genero,
         personaje: this.nombre_img_personaje(generic_image,flag_image),
         idioma: this.navParams.get('idioma')
-      });
+      },
+      {
+        animate: true,
+        animation:'transition',
+        duration:500,
+        direction:'forward'
+      }
+    );
+
   }
 
 }

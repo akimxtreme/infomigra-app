@@ -29,7 +29,6 @@ export class PaisPage {
   // Mis datos
   public mi_genero;
 
-
   constructor(public navCtrl: NavController, public navParams: NavParams, private countriesJSON:CountriesProvider) {
     this.idioma = this.navParams.get('idioma');
   	this.imagen = navParams.get('imagen');
@@ -42,7 +41,7 @@ export class PaisPage {
       this.title = "KREYE PWOFIL OU";
       this.text_question = "Moun ki peyi ou ye?";
     }
-
+    
     this.countriesJSON.getCountries3().subscribe(
             data => {
                 //.testData = data.json();
@@ -68,12 +67,20 @@ export class PaisPage {
 
   pais(id_pais,generic_image,flag_image){ 	
 
-  	this.navCtrl.push(LlegadaChilePage,{
+  	this.navCtrl.push(LlegadaChilePage,
+      {
   			pais: id_pais,
         genero: this.mi_genero,
         personaje: this.nombre_img_personaje(generic_image,flag_image),
         idioma: this.navParams.get('idioma')
-  		});
+  		},
+      {
+        animate: true,
+        animation:'transition',
+        duration:500,
+        direction:'forward'
+      }
+    );
   }
 
   allPaises(){

@@ -44,7 +44,7 @@ export class SeguridadPage {
 
   navigate(miurl){
   	if(miurl == 'SexoPage') {
-      this.navCtrl.push(SexoPage, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(SexoPage, {idioma: this.idioma }, {animate: true, animation:'transition',duration:500,direction:'forward'});
   	}
   }
 

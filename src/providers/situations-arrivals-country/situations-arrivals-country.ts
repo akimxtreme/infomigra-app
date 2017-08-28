@@ -10,7 +10,8 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class SituationsArrivalsCountryProvider {
-	public direccion = "http://localhost:3000/";
+  public direccion = "http://localhost:3000/";
+	// public direccion = "https://fast-fjord-45847.herokuapp.com/";
 
   constructor(public http: Http) {
     console.log('Hello SituationsArrivalsCountryProvider Provider');

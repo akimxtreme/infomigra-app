@@ -39,13 +39,13 @@ export class Info3Page {
 
   navigate(miurl){
   	if(miurl == 'InfoPage') {
-      this.navCtrl.push(InfoPage, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(InfoPage, {idioma: this.idioma }, {animate: true, animation:'transition',duration:500,direction:'back'});
   	}
   	if(miurl == 'Info2Page') {
-  		this.navCtrl.push(Info2Page, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(Info2Page, {idioma: this.idioma }, {animate: true, animation:'transition',duration:500,direction:'back'});
   	}
     if(miurl == 'WelcomePage') {
-      this.navCtrl.push(WelcomePage, {idioma: this.idioma }, {animate: false});
+      this.navCtrl.push(WelcomePage, {idioma: this.idioma }, {animate: true, animation:'transition',duration:500,direction:'forward'});
     }
   	
   }
