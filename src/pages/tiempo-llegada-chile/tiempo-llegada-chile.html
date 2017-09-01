@@ -7,19 +7,19 @@
 <ion-header class="header-page-tiempo-llegada-chile">
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content class="page-tiempo-llegada-chile" padding>
-<p style="text-align: center;color: #666; font-size: 17px;">¿Hace cuanto tiempo?</p>
+<p style="text-align: center;color: #666; font-size: 17px;">{{ text_question }}</p>
 <div class="circle">
 	<img class="left" src="assets/resta.png" alt="" (click)="resta('anio')">
 	<img class="right" src="assets/suma.png" alt="" (click)="suma('anio')">
 	<div class="progress-circle {{ percent_anio }}">
-   		<span>{{ anio }}<i>años</i></span>
+   		<span>{{ anio }}<i>{{ text_anios }}</i></span>
    		<div class="left-half-clipper">
       		<div class="first50-bar"></div>
       		<div class="value-bar"></div>
@@ -31,7 +31,7 @@
 	<img class="left" src="assets/resta.png" alt="" (click)="resta('mes')">
 	<img class="right" src="assets/suma.png" alt="" (click)="suma('mes')">
 	<div class="progress-circle {{ percent_mes }}">
-   		<span>{{ mes }}<i>meses</i></span>
+   		<span>{{ mes }}<i>{{ text_meses }}</i></span>
    		<div class="left-half-clipper">
       		<div class="first50-bar"></div>
       		<div class="value-bar"></div>

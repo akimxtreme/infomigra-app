@@ -16,6 +16,7 @@ import { SituationsArrivalsCountryProvider } from '../../providers/situations-ar
   providers:[SituationsArrivalsCountryProvider]
 })
 export class LlegadaChilePage {
+  // Datos
   public idioma;
   public genero;
   public pais;
@@ -39,7 +40,8 @@ export class LlegadaChilePage {
       this.url_personaje = "http://localhost:3000/assets/nacionalidad/";
     }    
     this.url_personaje = this.url_personaje + this.personaje  + '-' + this.genero.toLowerCase() + '-1.png';
-    // http://localhost:3000/assets/nacionalidad/bolivia-a-f.png
+    // http://localhost:3000/assets/nacionalidad/bolivia-m-1.png
+    // assets/nacionalidad/generico-m-1.png
 
 
     this.situationJSON.getSituation3().subscribe(
@@ -60,28 +62,46 @@ export class LlegadaChilePage {
     }
 
 
-    console.log(this.idioma);
-    console.log(this.genero);
-    console.log(this.pais);
-    console.log(this.personaje);
-    console.log(this.url_personaje);
+    console.log('idioma => '+ this.idioma);
+    console.log('genero => '+ this.genero);
+    console.log('pais => '+ this.pais);
+    console.log('personaje => '+ this.personaje);
+    console.log('url_personaje => '+ this.url_personaje);
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad LlegadaChilePage');
   }
 
-  llegada(valor){
-    this.navCtrl.push(TiempoLlegadaChilePage,{
-        llegada: valor,
-        //img_pais: this.img_pais_b
-      });
+  llegada(llegada_pais_id, percentage_profile){
 
-
+    console.log('llegada_pais_id => ' + llegada_pais_id);
+    console.log('percentage_profile => ' + percentage_profile);
+    
+    this.navCtrl.push(TiempoLlegadaChilePage,
+      {
+          llegada: llegada_pais_id,
+          porcentaje: percentage_profile,
+          genero: this.genero,
+          pais: this.pais,
+          personaje: this.personaje,
+          idioma: this.navParams.get('idioma')
+      },
+      {
+        animate: true,
+        animation:'transition',
+        duration:500,
+        direction:'forward'
+      }
+    );
   }
+
   allEstados(){    
     this.navCtrl.push(AllStatusLlegadaPaisPage,{        
-        //img_pais_b: this.img_pais_b
+        genero: this.genero,
+        pais: this.pais,
+        personaje: this.personaje,
+        idioma: this.navParams.get('idioma')
       });
 
   }

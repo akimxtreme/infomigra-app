@@ -18,13 +18,13 @@ export class SituationsArrivalsCountryProvider {
   }
 
   getSituation() {
-        // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
+        // let repos = this.http.get('https://infomigra-app.herokuapp.com/situations_arrivals_countries.json');
         let repos = this.http.get(this.direccion + 'situations_arrivals_countries.json');
         return repos;
     }
 
    getSituation3() {
-        // let repos = this.http.get('https://infomigra-app.herokuapp.com/countries.json');
+        // let repos = this.http.get('https://infomigra-app.herokuapp.com/situations_arrivals_countries_three.json');
         let repos = this.http.get(this.direccion + 'situations_arrivals_countries/situations_arrivals_countries_three.json');
         return repos;
     }

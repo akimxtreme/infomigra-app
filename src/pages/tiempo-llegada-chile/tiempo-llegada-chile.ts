@@ -23,12 +23,54 @@ export class TiempoLlegadaChilePage {
   public tiempo_llegada_anio;
   public tiempo_llegada_mes;
 
+  // Datos
+  public idioma;
+  public genero;
+  public pais;
+  public personaje;
+  public llegada_pais_id;
+  public llegada_percentage_profile;
+
+
+  // Información
+  public title;
+  public text_question;
+  public text_anios;
+  public text_meses;
+
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   	this.anio = '00';
   	this.percent_anio = 'p0';
 
   	this.mes = '00';
   	this.percent_mes = 'p0';
+
+    this.idioma = this.navParams.get('idioma');
+    this.genero = navParams.get('genero');
+    this.pais = navParams.get('pais');
+    this.personaje = navParams.get('personaje');
+    this.llegada_pais_id = navParams.get('llegada');
+    this.llegada_percentage_profile = navParams.get('porcentaje');
+
+    if(this.idioma == "es" || this.idioma == ""){
+      this.title = "CREANDO TU PERFIL";
+      this.text_question = "¿Cómo llegaste a Chile?";
+      this.text_anios = "años";
+      this.text_meses = "meses";
+    }else{
+      this.title = "KREYE PWOFIL OU";
+      this.text_question = "kijan ou te rive nan Chili?";
+      this.text_anios = "Ane";
+      this.text_meses = "Mwa";
+    }
+
+    console.log('idioma => '+ this.idioma);
+    console.log('genero => '+ this.genero);
+    console.log('pais => '+ this.pais);
+    console.log('personaje => '+ this.personaje);
+    console.log('llegada_pais_id => '+ this.llegada_pais_id);
+    console.log('llegada_percentage_profile => '+ this.llegada_percentage_profile);
+
   }
 
   ionViewDidLoad() {
@@ -89,7 +131,8 @@ export class TiempoLlegadaChilePage {
       break;
   		}
   	}
-  	
+  	console.log('Mes: valor =>'+ this.mes);
+    console.log('Año: valor =>'+ this.anio);
   }
 
 
@@ -128,7 +171,8 @@ export class TiempoLlegadaChilePage {
   		}
   	}
   	
-  	
+  	console.log('Mes: valor =>'+ this.mes);
+    console.log('Año: valor =>'+ this.anio);
   }
 
   next(){
@@ -139,11 +183,25 @@ export class TiempoLlegadaChilePage {
       this.tiempo_llegada_mes = "Mes: " + this.mes;
 
 
-      this.navCtrl.push(SituacionActualPage,{
-          tiempo_llegada_anio: this.anio,
-          tiempo_llegada_mes: this.mes,
-          img_pais: this.navParams.get('img_pais')
-        });
+      this.navCtrl.push(SituacionActualPage,
+        {
+          genero: this.genero,
+          pais: this.pais,
+          personaje: this.personaje,
+          llegada_pais_id: this.llegada_pais_id,
+          llegada_percentage_profile: this.llegada_percentage_profile,
+          tiempo_llegada_anio: this.anio.substr(1),
+          tiempo_llegada_mes: this.mes.substr(1),
+          idioma: this.idioma,
+          // img_pais: this.navParams.get('img_pais')
+        },
+        {
+          animate: true,
+          animation:'transition',
+          duration:500,
+          direction:'forward'
+        }
+      );
     }
   	
   }

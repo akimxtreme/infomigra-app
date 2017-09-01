@@ -22,12 +22,12 @@
 			<ion-row>
 				<ion-col col-4 *ngFor="let item of situations_arrivals_country">
 
-					<ion-row *ngIf="idioma == 'es'" class="estado" (click)="llegada(item.id)">
+					<ion-row *ngIf="idioma == 'es'" class="estado" (click)="llegada(item.id, item.percentage_profile)">
 						<p><img src="assets/situations_arrivals_country/{{ item.image }}" alt=""></p>
 						<p>{{ item.name }}</p>				
 					</ion-row>
 
-					<ion-row *ngIf="idioma != 'es'" class="estado" (click)="llegada(item.id)">
+					<ion-row *ngIf="idioma != 'es'" class="estado" (click)="llegada(item.id, item.percentage_profile)">
 						<p><img src="assets/situations_arrivals_country/{{ item.image }}" alt=""></p>
 						<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
 						<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>			
