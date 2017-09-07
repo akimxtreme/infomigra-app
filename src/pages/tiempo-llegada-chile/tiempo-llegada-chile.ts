@@ -54,12 +54,12 @@ export class TiempoLlegadaChilePage {
 
     if(this.idioma == "es" || this.idioma == ""){
       this.title = "CREANDO TU PERFIL";
-      this.text_question = "¿Cómo llegaste a Chile?";
+      this.text_question = "¿Hace cuanto tiempo?";
       this.text_anios = "años";
       this.text_meses = "meses";
     }else{
       this.title = "KREYE PWOFIL OU";
-      this.text_question = "kijan ou te rive nan Chili?";
+      this.text_question = "Depi konbyen tan?";
       this.text_anios = "Ane";
       this.text_meses = "Mwa";
     }
@@ -192,8 +192,7 @@ export class TiempoLlegadaChilePage {
           llegada_percentage_profile: this.llegada_percentage_profile,
           tiempo_llegada_anio: this.anio.substr(1),
           tiempo_llegada_mes: this.mes.substr(1),
-          idioma: this.idioma,
-          // img_pais: this.navParams.get('img_pais')
+          idioma: this.idioma
         },
         {
           animate: true,

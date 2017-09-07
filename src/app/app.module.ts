@@ -31,6 +31,7 @@ import { VideoPage } from '../pages/video/video';
 import { CountriesProvider } from '../providers/countries/countries';
 import { HttpModule } from '@angular/http';
 import { SituationsArrivalsCountryProvider } from '../providers/situations-arrivals-country/situations-arrivals-country';
+import { CurrentStatus } from '../providers/current-status';
 
 
 @NgModule({
@@ -97,7 +98,8 @@ import { SituationsArrivalsCountryProvider } from '../providers/situations-arriv
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CountriesProvider,
-    SituationsArrivalsCountryProvider
+    SituationsArrivalsCountryProvider,
+    CurrentStatus
   ]
 })
 export class AppModule {}

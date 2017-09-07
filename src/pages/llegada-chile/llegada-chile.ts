@@ -96,7 +96,7 @@ export class LlegadaChilePage {
     );
   }
 
-  allEstados(){    
+  allEstados(){
     this.navCtrl.push(AllStatusLlegadaPaisPage,{        
         genero: this.genero,
         pais: this.pais,

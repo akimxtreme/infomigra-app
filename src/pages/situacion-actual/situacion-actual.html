@@ -1,13 +1,13 @@
 <ion-header class="header-page-situacion-actual">
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 <ion-content class="page-situacion-actual">
-<p style="text-align: center;color: #FFF; font-size: 17px;">¿Actualmente Eres?</p>
-<p><img src="assets/nacionalidad/{{ img_pais }}"></p>
+<p style="text-align: center;color: #FFF; font-size: 17px;">{{ text_question }}</p>
+<p><img src="{{ url_personaje }}"></p>
 </ion-content>
 <ion-footer class="page-situacion-actual">
 <ion-grid class="contenido" style="border-top: 1px solid #FFF;border-bottom: 1px solid #FFF; margin-top:0%;">
@@ -19,22 +19,17 @@
 		</ion-col>
 		<ion-col col-10>
 			<ion-row>
-				<ion-col col-4>
-					<ion-row class="estado" (click)="llegada('irregular')">
-						<p><img src="assets/icon/otro.png" alt=""></p>
-						<p>Otro</p>				
+				<ion-col col-4 *ngFor="let item of situation_actual">
+
+					<ion-row *ngIf="idioma == 'es'" class="estado" (click)="llegada(item.id, item.percentage_profile)">
+						<p><img src="assets/current_status/{{ item.image }}" alt=""></p>
+						<p>{{ item.name }}</p>				
 					</ion-row>
-				</ion-col>
-				<ion-col col-4>
-					<ion-row class="estado" (click)="llegada('turista')">
-						<p><img src="assets/icon/turista-blanco.png" alt=""></p>				
-						<p>Turista</p>
-					</ion-row>
-				</ion-col>
-				<ion-col col-4>
-					<ion-row class="estado" (click)="llegada('trabajador')">
-						<p><img src="assets/icon/contrato-general.png" alt=""></p>				
-						<p>Trabajador</p>
+
+					<ion-row *ngIf="idioma != 'es'" class="estado" (click)="llegada(item.id, item.percentage_profile)">
+						<p><img src="assets/current_status/{{ item.image }}" alt=""></p>
+						<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+						<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>			
 					</ion-row>
 				</ion-col>
 			</ion-row>
