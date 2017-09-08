@@ -7,115 +7,22 @@
 <ion-header class="header-page-region">
 
   <ion-navbar>
-    <ion-title>CREANDO TU PERFIL</ion-title>
+    <ion-title>{{ title }}</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content class="page-region">
-<p style="text-align: center;color: #666; font-size: 17px;">¿De qué región eres?</p>
-<ion-grid class="contenido">
+	<p style="text-align: center;color: #666; font-size: 17px;">{{ text_question }}</p>
+	<ion-grid class="contenido">
 		<ion-row>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('I')">
-					<p><img src="assets/region/1.png" alt=""></p>
-					<p>Iquique</p>				
-				</ion-row>
+			<ion-col col-4 *ngFor="let item of region">
+				<ion-row class="estado" (click)="getRegion(item.id)">
+					<p><img src="assets/region/{{ item.roman_number }}.png" alt=""></p>
+					<p>{{ item.name }}</p>				
+				</ion-row>				
 			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('II')">
-					<p><img src="assets/region/2.png" alt=""></p>
-					<p>Antofagasta</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('III')">
-					<p><img src="assets/region/3.png" alt=""></p>
-					<p>Copiapó</p>				
-				</ion-row>
-			</ion-col>			
-
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('IV')">
-					<p><img src="assets/region/4.png" alt=""></p>
-					<p>La Serena</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('V')">
-					<p><img src="assets/region/5.png" alt=""></p>
-					<p>Valparaiso</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('VI')">
-					<p><img src="assets/region/6.png" alt=""></p>
-					<p>Rancagua</p>				
-				</ion-row>
-			</ion-col>
-
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('VII')">
-					<p><img src="assets/region/7.png" alt=""></p>
-					<p>Talca</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('VIII')">
-					<p><img src="assets/region/8.png" alt=""></p>
-					<p>Concepción</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('IX')">
-					<p><img src="assets/region/9.png" alt=""></p>
-					<p>Temuco</p>				
-				</ion-row>
-			</ion-col>
-
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('X')">
-					<p><img src="assets/region/10.png" alt=""></p>
-					<p>Puerto Montt</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('XI')">
-					<p><img src="assets/region/11.png" alt=""></p>
-					<p>Cohaique</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('XII')">
-					<p><img src="assets/region/12.png" alt=""></p>
-					<p>Punta Arenas</p>				
-				</ion-row>
-			</ion-col>
-
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('XIII')">
-					<p><img src="assets/region/13.png" alt=""></p>
-					<p>Santiago</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('XIV')">
-					<p><img src="assets/region/14.png" alt=""></p>
-					<p>Valdivia</p>				
-				</ion-row>
-			</ion-col>
-			<ion-col col-4>
-				<ion-row class="estado" (click)="region('XV')">
-					<p><img src="assets/region/15.png" alt=""></p>
-					<p>Arica</p>				
-				</ion-row>
-			</ion-col>
-			
-			
-					
-
 		</ion-row>
 	</ion-grid>
-
 </ion-content>

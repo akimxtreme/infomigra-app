@@ -21,6 +21,7 @@ import { SituacionActualPage } from '../pages/situacion-actual/situacion-actual'
 import { AllSituacionActualPage } from '../pages/all-situacion-actual/all-situacion-actual';
 import { TiempoSituacionActualPage } from '../pages/tiempo-situacion-actual/tiempo-situacion-actual';
 import { RegionPage } from '../pages/region/region';
+import { VinculoFamiliar } from '../pages/vinculo-familiar/vinculo-familiar';
 import { ProgresoPage } from '../pages/progreso/progreso';
 import { RegistroPage } from '../pages/registro/registro';
 import { PerfilExitosoPage } from '../pages/perfil-exitoso/perfil-exitoso';
@@ -32,6 +33,8 @@ import { CountriesProvider } from '../providers/countries/countries';
 import { HttpModule } from '@angular/http';
 import { SituationsArrivalsCountryProvider } from '../providers/situations-arrivals-country/situations-arrivals-country';
 import { CurrentStatus } from '../providers/current-status';
+import { Region } from '../providers/region';
+import { FamilyBond } from '../providers/family-bond';
 
 
 @NgModule({
@@ -53,6 +56,7 @@ import { CurrentStatus } from '../providers/current-status';
     AllSituacionActualPage,
     TiempoSituacionActualPage,
     RegionPage,
+    VinculoFamiliar,
     ProgresoPage,
     RegistroPage,
     PerfilExitosoPage,
@@ -85,6 +89,7 @@ import { CurrentStatus } from '../providers/current-status';
     AllSituacionActualPage,
     TiempoSituacionActualPage,
     RegionPage,
+    VinculoFamiliar,
     ProgresoPage,
     RegistroPage,
     PerfilExitosoPage,
@@ -99,7 +104,9 @@ import { CurrentStatus } from '../providers/current-status';
     {provide: ErrorHandler, useClass: IonicErrorHandler},
     CountriesProvider,
     SituationsArrivalsCountryProvider,
-    CurrentStatus
+    CurrentStatus,
+    Region,
+    FamilyBond
   ]
 })
 export class AppModule {}

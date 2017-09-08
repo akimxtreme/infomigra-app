@@ -20,6 +20,7 @@ export class LlegadaChilePage {
   public idioma;
   public genero;
   public pais;
+  public country_category_percentage_profile;
   public personaje;
   public url_personaje;
 
@@ -33,6 +34,7 @@ export class LlegadaChilePage {
     this.idioma = this.navParams.get('idioma');
     this.genero = navParams.get('genero');
     this.pais = navParams.get('pais');
+    this.country_category_percentage_profile = navParams.get('country_category_percentage_profile');
     this.personaje = navParams.get('personaje');
 
     this.url_personaje = "assets/nacionalidad/";
@@ -65,8 +67,10 @@ export class LlegadaChilePage {
     console.log('idioma => '+ this.idioma);
     console.log('genero => '+ this.genero);
     console.log('pais => '+ this.pais);
+    console.log('country_category_percentage_profile => '+ this.country_category_percentage_profile);
     console.log('personaje => '+ this.personaje);
     console.log('url_personaje => '+ this.url_personaje);
+    
   }
 
   ionViewDidLoad() {
@@ -84,6 +88,7 @@ export class LlegadaChilePage {
           porcentaje: percentage_profile,
           genero: this.genero,
           pais: this.pais,
+          country_category_percentage_profile: this.country_category_percentage_profile,
           personaje: this.personaje,
           idioma: this.navParams.get('idioma')
       },
@@ -100,6 +105,7 @@ export class LlegadaChilePage {
     this.navCtrl.push(AllStatusLlegadaPaisPage,{        
         genero: this.genero,
         pais: this.pais,
+        country_category_percentage_profile: this.country_category_percentage_profile,
         personaje: this.personaje,
         idioma: this.navParams.get('idioma')
       });

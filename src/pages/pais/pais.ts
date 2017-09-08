@@ -65,13 +65,14 @@ export class PaisPage {
     return nombre;
   }
 
-  pais(id_pais,generic_image,flag_image){ 	
+  pais(id_pais,generic_image,flag_image, country_category_percentage_profile){ 	
 
   	this.navCtrl.push(LlegadaChilePage,
       {
   			pais: id_pais,
         genero: this.mi_genero,
         personaje: this.nombre_img_personaje(generic_image,flag_image),
+        country_category_percentage_profile: country_category_percentage_profile,
         idioma: this.navParams.get('idioma')
   		},
       {

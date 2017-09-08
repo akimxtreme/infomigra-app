@@ -21,6 +21,7 @@ export class SituacionActualPage {
   public idioma;
   public genero;
   public pais;
+  public country_category_percentage_profile;
   public personaje;
   public llegada_pais_id;
   public llegada_percentage_profile;
@@ -42,6 +43,7 @@ export class SituacionActualPage {
     this.idioma = this.navParams.get('idioma');
     this.genero = navParams.get('genero');
     this.pais = navParams.get('pais');
+    this.country_category_percentage_profile = navParams.get('country_category_percentage_profile');
     this.personaje = navParams.get('personaje');
     this.llegada_pais_id = navParams.get('llegada_pais_id');
     this.llegada_percentage_profile = navParams.get('llegada_percentage_profile');
@@ -79,6 +81,7 @@ export class SituacionActualPage {
     console.log('idioma => '+ this.idioma);
     console.log('genero => '+ this.genero);
     console.log('pais => '+ this.pais);
+    console.log('country_category_percentage_profile => '+ this.country_category_percentage_profile);
     console.log('personaje => '+ this.personaje);
     console.log('llegada_pais_id => '+ this.llegada_pais_id);
     console.log('llegada_percentage_profile => '+ this.llegada_percentage_profile);
@@ -101,6 +104,7 @@ export class SituacionActualPage {
       {
           genero: this.genero,
           pais: this.pais,
+          country_category_percentage_profile: this.country_category_percentage_profile,
           personaje: this.personaje,
           llegada_pais_id: this.llegada_pais_id,
           llegada_percentage_profile: this.llegada_percentage_profile,
@@ -121,10 +125,10 @@ export class SituacionActualPage {
 
 
   allEstados(){
-    // this.navCtrl.push(AllSituacionActualPage);
     this.navCtrl.push(AllSituacionActualPage,{        
         genero: this.genero,
         pais: this.pais,
+        country_category_percentage_profile: this.country_category_percentage_profile,
         personaje: this.personaje,
         llegada_pais_id: this.llegada_pais_id,
         llegada_percentage_profile: this.llegada_percentage_profile,

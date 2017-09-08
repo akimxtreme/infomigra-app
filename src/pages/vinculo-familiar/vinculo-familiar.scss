@@ -1,0 +1,82 @@
+.page-vinculo-familiar {
+	background-color: #7e6ea7;
+}
+
+.header-page-vinculo-familiar ion-navbar .toolbar-background-md {	
+	background: #312051;
+}
+
+.header-page-vinculo-familiar .toolbar-content .title-md .toolbar-title {
+	color: #FFF !important;
+	text-align: left;
+  	margin-left: 35px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
+.bar-button-default-md {
+	color: #FFF;
+}
+
+
+.arrow {
+	text-align: center;
+	padding: 0px !important;
+	margin: 0px !important;
+}
+
+.arrow ion-icon {
+	font-size: 60px;
+	color: #FFF;
+	margin-top: -30px;
+}
+
+.page-vinculo-familiar .scroll-content > p  {
+	text-align: center;
+}
+
+.page-vinculo-familiar .scroll-content > p > img {
+	width: 80%; margin: 0% auto auto auto; opacity: 1;padding: 16px 16px 0px 16px;
+}
+
+.page-vinculo-familiar .estado > p {
+	text-align: center;
+	float: left;
+	width: 100%;
+	margin: 1px;
+	color: #FFF;
+}
+
+.page-vinculo-familiar .estado p img {
+	width: 50px;
+	margin: 0px;
+	border-radius: 25px;
+	/*border: 2px solid #FFF;*/
+}
+
+ion-footer.page-vinculo-familiar::before {
+	top:0px;
+	height: 0px;
+}
+
+.page-vinculo-familiar .flecha {
+	font-size: 28px;
+	margin-top: 0%;
+	padding-top: 18px;
+	padding-bottom: 15px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+.page-vinculo-familiar .flecha-izquierda img, .page-vinculo-familiar .flecha-derecha img {
+	width: 70%;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+
+.page-vinculo-familiar .flecha-derecha img {
+	-webkit-transform: rotate(180deg);
+	-moz-transform: rotate(180deg);
+	rotation: 180deg;
+	filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}

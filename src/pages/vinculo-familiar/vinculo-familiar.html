@@ -1,0 +1,42 @@
+<ion-header class="header-page-vinculo-familiar">
+
+  <ion-navbar>
+    <ion-title>{{ title }}</ion-title>
+  </ion-navbar>
+
+</ion-header>
+<ion-content class="page-vinculo-familiar">
+<p style="text-align: center;color: #FFF; font-size: 17px;">{{ text_question }}</p>
+<p><img src="{{ url_personaje }}"></p>
+</ion-content>
+<ion-footer class="page-situacion-actual">
+<ion-grid class="contenido" style="border-top: 1px solid #FFF;border-bottom: 1px solid #FFF; margin-top:0%;">
+	<ion-row>
+		<ion-col col-1>
+			
+		</ion-col>
+		<ion-col col-10>
+			<ion-row>
+				<ion-col col-4 *ngFor="let item of vinculo_familiar">
+
+					<ion-row *ngIf="idioma == 'es'" class="estado" (click)="next(item.id, item.percentage_profile)">
+						<p><img src="assets/family_bonds/{{ item.image }}" alt=""></p>
+						<p>{{ item.name }}</p>				
+					</ion-row>
+
+					<ion-row *ngIf="idioma != 'es'" class="estado" (click)="next(item.id, item.percentage_profile)">
+						<p><img src="assets/family_bonds/{{ item.image }}" alt=""></p>
+						<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
+						<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>			
+					</ion-row>
+				</ion-col>
+			</ion-row>
+		</ion-col>
+		<ion-col col-1>
+			
+		</ion-col>
+	</ion-row>
+</ion-grid>
+</ion-footer>
+
+

@@ -20,6 +20,39 @@
   text-transform: uppercase;
 }
 
+
+.page-progreso .imagen_progreso > img {
+  width: 80%;
+  margin: 0 10%;
+  //visibility: hidden;
+}
+
+.page-progreso .imagen_progreso > span {
+  text-align: center;
+  width: 100%;
+  float: left;
+  position: relative;
+  margin-top: -54%;
+}
+
+.page-progreso .imagen_progreso > span > b {
+  width: 100%;
+  float: left;
+  font-size: 41px;
+  color: #FFF;
+}
+
+.page-progreso .imagen_progreso > span > i {
+  width: 100%;
+  float: left;
+  font-style: normal;
+  color: #FFF;
+  font-size: 16px;
+}
+
+
+
+
 .page-progreso .circle1 {
     width: 24em;
     height: 24em;

@@ -22,6 +22,7 @@ import { HomePage } from '../pages/home/home';
 // import { RegionPage } from '../pages/region/region';
 // import { ProgresoPage } from '../pages/progreso/progreso';
 // import { RegistroPage } from '../pages/registro/registro';
+// import { VinculoFamiliar } from '../pages/vinculo-familiar/vinculo-familiar';
 // import { PerfilExitosoPage } from '../pages/perfil-exitoso/perfil-exitoso';
 // import { LineaPasosPage } from '../pages/linea-pasos/linea-pasos';
 
@@ -48,6 +49,7 @@ export class MyApp {
   // rootPage:any = AllSituacionActualPage;
   // rootPage:any = TiempoSituacionActualPage;
   // rootPage:any = RegionPage;
+  // rootPage:any = VinculoFamiliar;
   // rootPage:any = ProgresoPage;
   // rootPage:any = RegistroPage;
   // rootPage:any = PerfilExitosoPage;
