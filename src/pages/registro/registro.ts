@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { PerfilExitosoPage } from '../perfil-exitoso/perfil-exitoso';
+import {Validators, FormBuilder, FormGroup } from '@angular/forms';
 
 /**
  * Generated class for the RegistroPage page.
@@ -15,17 +16,44 @@ import { PerfilExitosoPage } from '../perfil-exitoso/perfil-exitoso';
 })
 export class RegistroPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  public valores;
+  public valida_nombre;
+  public valida_password;
+  public valida_password2;
+  public valida_comuna;
+  public valida_terminos;
+
+  
+  private todo : FormGroup;
+
+
+  constructor(public navCtrl: NavController, public navParams: NavParams, private formBuilder: FormBuilder) {
+    this.valida_nombre = "";
+    this.valida_comuna = "";
+    this.valida_password = "";
+    this.valida_password2 = "";
+    this.valida_terminos = "";
+
+    this.todo = this.formBuilder.group({
+      nombre: ['', Validators.required],
+      password: ['', Validators.required],
+      password2: ['', Validators.required],
+      comuna: [''],
+      termino: ['']      
+    });
   }
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad RegistroPage');
   }
 
-  navigate(miurl){
-  	if(miurl == 'PerfilExitosoPage') {
-  		this.navCtrl.push(PerfilExitosoPage);
-  	}
+  logForm(){
+    console.log(this.todo.value);
+    this.navCtrl.push(PerfilExitosoPage);
+  }
+
+  navigate(){
+      
   }
 
 }

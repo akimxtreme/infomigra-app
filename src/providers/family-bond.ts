@@ -10,7 +10,7 @@ import 'rxjs/add/operator/map';
 */
 @Injectable()
 export class FamilyBond {
-	public direccion = "http://localhost:3000/";
+	public direccion = "https://infomigra-app.herokuapp.com/";
 	// public direccion = "https://fast-fjord-45847.herokuapp.com/";
 
 

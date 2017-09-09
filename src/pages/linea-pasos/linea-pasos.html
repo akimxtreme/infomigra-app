@@ -10,7 +10,7 @@
 		    </ion-buttons>
 	    </ion-col>
 		<ion-col col-9 class="title">
-	    <ion-title>
+	    <ion-title style="color: #FFF !important;">
 	      Pasos a seguir
 	    </ion-title>
 	    </ion-col>		
@@ -21,7 +21,7 @@
 
 <ion-content class="page-linea-pasos">
 <div style="background-image: url('assets/linea-de-tiempo-background.png');">
-	<p class="user"><img src="assets/user-masculino.jpg"></p>
+	<p class="user"><img src="assets/avatar.png"></p>
 	<p class="username">Jorge Dumois</p>
 	<p class="info">Trabajador Boliviano</p>
 </div>
@@ -33,7 +33,7 @@
 			<ion-row class="primero">
 				<ion-col col-3>
 					<p>
-					<img src="assets/pasos/boton-tiempo-plus.png">
+					<img src="assets/category_steps/boton-tiempo-plus.png">
 					</p>
 				</ion-col>
 				<ion-col col-9></ion-col>			
@@ -45,134 +45,34 @@
 				</ion-col>			
 			</ion-row>
 
-			<ion-row>
+			<ion-row *ngFor="let item of steps">
 				<ion-col col-3>
 					<p>
-					<img src="assets/pasos/salud.png">
+					<img src="assets/category_steps/{{ item.category_step.icon }}">
 					</p>
 				</ion-col>
 				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
+					<p class="title-paso">{{ item.name }}<b></b></p>				
+					<p class="desc-paso">{{ item.description.substr(0,55) }}<br></p>
 				</ion-col>			
 			</ion-row>
 
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
-
-			<ion-row>
-				<ion-col col-3>
-					<p>
-					<img src="assets/pasos/salud.png">
-					</p>
-				</ion-col>
-				<ion-col class="texto" col-9>
-					<p class="title-paso">hola<b></b></p>				
-					<p class="desc-paso">Lorem ipsum dolor sit amet.</p>
-				</ion-col>			
-			</ion-row>
+			
 			
 		</ion-col>		
 	</ion-row>
 </ion-grid>
 </ion-content>
-<ion-footer>
-  <ion-toolbar>
-    <ion-icon name="home"></ion-icon>
-    <ion-icon name="person"></ion-icon>
-    <ion-title class="footer" (click)="navigate('HomePage')">Principal</ion-title>
-  </ion-toolbar>
+<ion-footer class="footer-page-linea-pasos">
+  <ion-grid>
+  <ion-row>
+    <ion-col col-12>
+    	<p (click)="cerrar()"><img src="assets/dashboard/menu-footer-01.png"></p>
+    	<p><img src="assets/dashboard/menu-footer-02.png"></p>
+    	<p><img src="assets/dashboard/menu-footer-03.png"></p>
+    	<p><img src="assets/dashboard/menu-footer-04.png"></p>
+    	<p><img src="assets/dashboard/menu-footer-05.png"></p>
+    </ion-col>
+  </ion-row>
+</ion-grid>
 </ion-footer>

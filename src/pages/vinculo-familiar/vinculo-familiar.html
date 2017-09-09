@@ -20,12 +20,12 @@
 				<ion-col col-4 *ngFor="let item of vinculo_familiar">
 
 					<ion-row *ngIf="idioma == 'es'" class="estado" (click)="next(item.id, item.percentage_profile)">
-						<p><img src="assets/family_bonds/{{ item.image }}" alt=""></p>
+						<p><img src="assets/family_bonds/{{item.image}}" alt=""></p>
 						<p>{{ item.name }}</p>				
 					</ion-row>
 
 					<ion-row *ngIf="idioma != 'es'" class="estado" (click)="next(item.id, item.percentage_profile)">
-						<p><img src="assets/family_bonds/{{ item.image }}" alt=""></p>
+						<p><img src="assets/family_bonds/{{item.image}}" alt=""></p>
 						<p *ngIf="item.name_cr != ''" >{{ item.name_cr }}</p>	
 						<p *ngIf="item.name_cr == ''" >{{ item.name }}</p>			
 					</ion-row>

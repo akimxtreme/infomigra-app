@@ -27,6 +27,26 @@
 	width: 60%; margin: 10% auto auto auto; opacity: 1;padding: 16px 16px 0px 16px;
 }
 
+.form_registro ion-item {
+	margin-bottom: 8px;
+}
+
+.form_registro ion-item .item-inner {
+	border-bottom: 0px !important;
+}
+
 .form_registro ion-item ion-input {
 	font-size: 14px !important;
+}
+
+.page-registro form {
+	width: 100%;
+	margin: 0%;
+}
+
+.form_registro ion-item ion-input  > input {
+	color:#666;
+	text-align: center; 
+	color:#312051;
+	font-size: 14px;
 }

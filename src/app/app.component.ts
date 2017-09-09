@@ -3,8 +3,8 @@ import { Platform } from 'ionic-angular';
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 
-// import { VideoPage } from '../pages/video/video';
-import { HomePage } from '../pages/home/home';
+import { VideoPage } from '../pages/video/video';
+// import { HomePage } from '../pages/home/home';
 // import { InfoPage } from '../pages/info/info';
 // import { Info2Page } from '../pages/info2/info2';
 // import { Info3Page } from '../pages/info3/info3';
@@ -32,8 +32,8 @@ import { HomePage } from '../pages/home/home';
   templateUrl: 'app.html'
 })
 export class MyApp {
-  // rootPage:any = VideoPage;
-  rootPage:any = HomePage;
+  rootPage:any = VideoPage;
+  // rootPage:any = HomePage;
   // rootPage:any = InfoPage;
   // rootPage:any = Info2Page;
   // rootPage:any = Info3Page;

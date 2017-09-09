@@ -3,34 +3,39 @@
 <ion-grid class="contenido" style="background-color: #ededec; padding:5px 25px 30px 25px;">
 	<p class="arrow"><ion-icon name="arrow-dropdown"></ion-icon></p>
 	<ion-row>
-
+		
 		<ion-col class="info" col-12>
-			<p style="text-align: center;color: #666;">Crea un nombre y una contraseña por tu seguridad, así te aseguras que no se pueda acceder a tu información personal</p>			
+			<p style="text-align: center;color: #666;">Crea un nombre y una contraseña por tu seguridad, así te aseguras que no se pueda acceder a tu información personal</p>
 		</ion-col>
-
+		<form [formGroup]="todo" (ngSubmit)="logForm()">
 		<ion-col col-12>
 			<ion-list class="form_registro">
-				<ion-item>
-    				<ion-input type="text" min="3" max="20" placeholder="Usuario: Diviértete, inventa un nombre"></ion-input>
+				<ion-item style="{{ valida_nombre }}">
+    				<ion-input type="text" min="3" max="20" placeholder="Usuario: Diviértete, inventa un nombre" formControlName="nombre"></ion-input>
   				</ion-item>
 				<ion-item>
-    				<ion-input type="password" min="4" max="20" placeholder="Contraseña: Ej: la que quieras"></ion-input>
+    				<ion-input class="{{ valida_password }}" type="password" min="4" max="20" placeholder="Contraseña: Ej: la que quieras" formControlName="password"></ion-input>
   				</ion-item>
   				<ion-item>
-    				<ion-input type="password" min="4" max="20" placeholder="Repetir contraseña"></ion-input>
+    				<ion-input class="{{ valida_password2 }}" type="password" min="4" max="20" placeholder="Repetir contraseña" formControlName="password2"></ion-input>
   				</ion-item>
   				<ion-item>
-    				<ion-label style="font-size: 15px; text-align: left;">Aceptar Terminos y condiciones</ion-label>
-    				<ion-checkbox [(ngModel)]="sausage" disabled="false" style="margin-right: 10px;"></ion-checkbox>
+    				<ion-input class="{{ valida_comuna }}" type="text" min="3" max="20" placeholder="---        Seleccione su comuna        ---" formControlName="comuna" readonly="readonly"></ion-input>
+  				</ion-item>
+  				<ion-item>
+    				<ion-label style="font-size: 14px; text-align: center; color: #AAA;">Aceptar Terminos y condiciones</ion-label>
+    				<ion-checkbox [(ngModel)]="sausage" disabled="false" style="margin-right: 10px;" formControlName="termino"></ion-checkbox>
   				</ion-item>
 			</ion-list>
 		</ion-col>
 
 		<ion-col col-12>
 			<ion-row>
-				<button ion-button small full style="font-size: 12px;background-color: #312051;padding: 16px;border:2px solid #312051" (click)="navigate('PerfilExitosoPage')">Continuar</button>
+				<button ion-button small full style="font-size: 12px;background-color: #312051;padding: 16px;border:2px solid #312051" type="submit" [disabled]="!todo.valid">Continuar</button>
 			</ion-row>
-		</ion-col>		
+		</ion-col>
+		</form>	
+			
 
 	</ion-row>
 </ion-grid>

@@ -2,6 +2,14 @@
 	background: #7e6ea7 !important;
 }
 
+.page-linea-pasos-header .toolbar-content .title-md .toolbar-title {
+	color: #FFF !important;
+	text-align: left;
+  	margin-left: 15px;
+	font-weight: normal;
+	font-size: 16px;
+}
+
 .page-linea-pasos-header ion-navbar .toolbar-background-md .back-button {
 	display:none;
 }
@@ -33,12 +41,12 @@
 }
 
 .page-linea-pasos div .user {
-	margin-bottom: 5px;
+	margin-bottom: -5px;
 }
 
 .page-linea-pasos div .user img {
 	width: 100px;
-	border: 10px solid #312051;
+	
 	border-radius: 50px;
 }
 
@@ -71,7 +79,7 @@
 }
 
 .page-linea-pasos .pasos ion-row > ion-col.borde ion-row.primero .col p img {
-	box-shadow: 0px 2px 2px #333;
+	/* box-shadow: 0px 2px 2px #333; */
 	border-radius: 25px;
 	margin-bottom:0px;
 }
@@ -109,11 +117,35 @@
 .page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p.title-paso {
 	font-weight:bold;
 	color: #333;
+	padding-right: 45px;
+	font-size: 13px;
 }
 .page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p.desc-paso {
 	color:#666;
+	font-size: 13px;
 }
 .page-linea-pasos .pasos ion-row > ion-col.borde ion-row.row .col p img {
 	width: 50px;
 
 }
+
+.footer-page-linea-pasos {
+	background-color: #FFF;
+}
+
+.footer-page-linea-pasos, .footer-page-linea-pasos ion-grid, .footer-page-linea-pasos ion-grid ion-row, .footer-page-linea-pasos ion-grid ion-row, .footer-page-linea-pasos ion-grid ion-row ion-col, .footer-page-linea-pasos ion-grid ion-row ion-col p {
+	padding: 0;
+	margin: 0;
+}
+.footer-page-linea-pasos ion-grid ion-row ion-col p {
+	float:left;
+	width: 20%;
+	text-align: center;
+}
+
+.footer-page-linea-pasos ion-grid ion-row ion-col p img {
+	max-width: 40%;
+	padding-top: 3px;
+	padding-bottom: 3px;
+}
+

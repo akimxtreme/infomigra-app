@@ -35,6 +35,7 @@ import { SituationsArrivalsCountryProvider } from '../providers/situations-arriv
 import { CurrentStatus } from '../providers/current-status';
 import { Region } from '../providers/region';
 import { FamilyBond } from '../providers/family-bond';
+import { Steps } from '../providers/steps';
 
 
 @NgModule({
@@ -106,7 +107,8 @@ import { FamilyBond } from '../providers/family-bond';
     SituationsArrivalsCountryProvider,
     CurrentStatus,
     Region,
-    FamilyBond
+    FamilyBond,
+    Steps
   ]
 })
 export class AppModule {}

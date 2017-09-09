@@ -60,10 +60,10 @@ export class VinculoFamiliar {
 
     this.url_personaje = "assets/nacionalidad/";
     if(this.personaje != "generico"){
-      this.url_personaje = "http://localhost:3000/assets/nacionalidad/";
+      //this.url_personaje = "https://infomigra-app.herokuapp.com/assets/nacionalidad/";
     }    
     this.url_personaje = this.url_personaje + this.personaje  + '-' + this.genero.toLowerCase() + '-2.png';
-    // http://localhost:3000/assets/nacionalidad/bolivia-m-2.png
+    // https://infomigra-app.herokuapp.com/assets/nacionalidad/bolivia-m-2.png
     // assets/nacionalidad/generico-m-2.png
 
     this.vinculoJSON.getFamilyBond().subscribe(
